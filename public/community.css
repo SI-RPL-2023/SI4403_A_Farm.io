@@ -1,0 +1,125 @@
+.header-community {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: min-content;
+    grid-gap: 5rem;
+    padding: 8rem 9rem;
+    background-color: #fff;
+}
+
+.community-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 3rem;
+}
+
+.community-box h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #BEAB32;
+}
+
+.community-box h1 {
+    font-size: 4.6rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.community-box p {
+    font-size: 2rem;
+    color: #939393;
+}
+
+.community-cta {
+    justify-self: start;
+}
+
+.community-banner {
+    width: 100%;
+    object-fit: cover;
+    align-self: center;
+}
+
+.community-feature {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 5rem;
+    justify-items: center;
+    padding: 7rem 9rem;
+}
+
+.community-feature h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #BEAB32;
+}
+
+.community-feature h1 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.community-feature-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+    grid-gap: 3rem;
+}
+
+.community-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    justify-items: center;
+    grid-gap: 2rem;
+    text-align: center;
+    background-color: #F3F3F3;
+}
+
+.community-card {
+    color: #000;
+}
+
+.community-card img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.community-card h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.community-card p {
+    font-size: 1.6rem !important;
+    color: #848484;
+}
+
+.community-find {
+    background-color: #FCFAEB;
+}
+
+.community-find h1 {
+    text-align: center;
+    width: 70%;
+}
+
+.community-find p {
+    font-size: 2rem;
+    color: #939393;
+    text-align: center;
+    width: 75%;
+}
+
+.community-card h1,
+.community-card p {
+    text-align: left;
+    width: unset;
+}
+
+.community-card .cta {
+    justify-self: stretch;
+}

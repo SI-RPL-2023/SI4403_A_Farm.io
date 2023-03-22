@@ -1,0 +1,230 @@
+.checkout-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 3rem;
+    justify-items: center;
+    padding: 5rem 9rem;
+}
+
+.checkout-header h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.checkout-header h2 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #626262;
+}
+
+.checkout-box {
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 5rem;
+    padding: 5rem 9rem 12rem;
+}
+
+.checkout-card {
+    align-self: start;
+    position: sticky;
+    top: 2rem;
+    box-shadow: none;
+}
+
+.checkout-card img {
+    border-radius: 10px;
+}
+
+.checkout-rating {
+    justify-self: center;
+}
+
+.checkout-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 7rem;
+}
+
+.checkout-title {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.checkout-benefit-title {
+}
+
+.checkout-benefit {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 3rem;
+}
+
+.checkout-benefit-box {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-auto-rows: min-content;
+    grid-gap: 3rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    border: 1px solid #00000033;
+    border-radius: 20px;
+    background-color: #FDFFF6;
+}
+
+.checkout-benefit-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkout-benefit-tile p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.checkout-benefit-tile span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #939393;
+}
+
+.checkout-benefit-icon {
+
+}
+
+.checkout-benefit-check {
+
+}
+
+.checkout-payment {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 5rem;
+    color: #000;
+}
+
+.checkout-subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.checkout-promo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    border: 1px solid #00000033;
+}
+
+.checkout-promo p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.checkout-payment-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 3rem;
+}
+
+.checkout-payment-detail h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.checkout-payment-detail div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.checkout-payment-detail p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.checkout-payment-coret {
+    color: #6D4405;
+    text-decoration: line-through;
+}
+
+.checkout-payment-hargaAsli {
+    font-size: 2.6rem !important;
+    font-weight: 600 !important;
+}
+
+.checkout-payment-detail p span {
+
+}
+
+.checkout-payment-bank {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 3rem;
+}
+
+.checkout-payment-bank h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.checkout-payment-bank-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 2rem;
+    font-size: 2rem;
+}
+
+.checkout-payment-bank-box p {
+    font-weight: 400;
+}
+
+.checkout-payment-bank-box span {
+    font-weight: 700;
+}
+
+.checkout-payment-ask {
+    justify-self: start;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #FDFFF6;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #00000033;
+}
+
+.checkout-information {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    grid-gap: 5rem;
+}
+
+.checkout-information h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.checkout-information p {
+    font-size: 2rem;
+    color: #626262;
+}
+
+.checkout-information > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+}

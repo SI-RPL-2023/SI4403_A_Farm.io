@@ -1,0 +1,58 @@
+.addclass-video {
+    border: none !important;
+}
+
+.inbox-img {
+    width: 4rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+.inbox-invoice {
+    background-color: #dedede !important;
+    color: #000 !important;
+    font-size: 1.2rem;
+    padding: 4px;
+    border: none;
+}
+
+.inbox-idclass,
+.inbox-idclass:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.inbox-idclass:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.dashboard__guru-myclass {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* .dashboard__guru-myclass-card {
+    padding: 2rem;
+}
+
+.dashboard__guru-myclass-card h1 {
+    font-size: 1.8rem;
+} */
+
+.dashboard__guru-myclass-card p {
+    font-size: 1.4rem;
+}
+
+.dashboard__guru-transaksi {
+    grid-template-columns: 1fr;
+}
+
+.dahsboard__guru-delete {
+    background-color: transparent;
+    color: #000;
+    width: 100%;
+}
+
+.dahsboard__guru-delete:hover {
+    color: #000;
+}
