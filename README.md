@@ -10,12 +10,12 @@ Pada tugas besar Rekayasa Perangkat Lunak (RPL) ini kami membuat sebuah website 
 ## Tentang Kami
 Kami merupakan kelompok 233 (FarmHousers)  yang berasal dari kelas SI-44-03, program studi S1 Sistem Informasi, Telkom University. Kami beranggotakan 6 orang, diantaranya:
 
-- Diki Ilham Firmansyah			      (1202202134)
-- Fadli Izurohman				          (1202204033)
-- Muhamad Felix Nugraha Tarjono	  (1202204268)
+- Diki Ilham Firmansyah			       (1202202134)
+- Fadli Izurohman				            (1202204033)
+- Muhamad Felix Nugraha Tarjono	 (1202204268)
 - Novan Janis Aditya Halawa 	    (1202201382)
-- Rafid Fadhil					          (1202204021)
-- Ruben Adisuryo Nugroho			    (1202200152)
+- Rafid Fadhil					              (1202204021)
+- Ruben Adisuryo Nugroho			      (1202200152)
 
 ## Repository Structure
 
