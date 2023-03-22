@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" style="margin-top: 4%">
     <div class="footer__box">
         <div class="footer__profile">
             <img src="../asset/Logo.png" class="logoFarm" alt="Farmio">
