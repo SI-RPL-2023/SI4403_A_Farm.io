@@ -25,6 +25,25 @@
     .manfaat{
         padding-top: 5%
     }
+    .dikanan{
+        top: 2700px;
+    }
+    .garis{
+        height: 61px;
+        width: 2px;
+        background-color: #EBFF00;
+        margin-left: 35px;
+        position: absolute;
+        margin-top: -45px;
+    }
+    .garis2{
+        height: 72px;
+        width: 2px;
+        background-color: #EBFF00;
+        margin-left: 35px;
+        position: absolute;
+        margin-top: -45px;
+    }
 </style>
 <body>
     <div class="app">
@@ -56,7 +75,7 @@
                 <div>
                 <img class="position-absolute bottom-0 end-0" style=" width: 400px" src="../../../asset/titik1.png" alt="">
                 <img class="position-absolute top-0 start-50 translate-middleç-x" style=" width: 400px" src="../../../asset/titik.svg" alt="">
-                <img class="position-absolute top-50 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
+                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
                 </div>
                 <div class="col-6">
                     <div class="row">
@@ -153,6 +172,7 @@ ribuan artikel, video pembelajaran, tentang Perternakan.</p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="garis"></div>
                             <div class="moreInfo">
                                 <div class="infoImage d-flex mb-5 align-items-center">
                                     <img src="asset/produktifitas.png" class="me-5" alt="produktifitas">
@@ -163,6 +183,7 @@ ribuan artikel, video pembelajaran, tentang Perternakan.</p>
                                     </div>
                                 </div>
                             </div>
+                            <div class="garis2"></div>
                             <div class="moreInfo">
                                 <div class="infoImage d-flex mb-5 align-items-center">
                                     <img src="asset/toga.png" class="me-5" alt="toga">
@@ -187,6 +208,7 @@ ribuan artikel, video pembelajaran, tentang Perternakan.</p>
                 <a href="" class="community__cta cta">Lihat Semua</a>
             </div>
             <img src="asset/testimoni 2.png" alt="testimoni" class="community__img">
+            <img class="position-absolute end-0 translate-middle-y dikanan" style=" width: 700px" src="../../../asset/Frame 1064.png" alt="">
         </section>
         <section class="sponsor">
             <h1 class="sponsor__title" style="margin-top: 60px">Sponsored by beloved partners</h1>
