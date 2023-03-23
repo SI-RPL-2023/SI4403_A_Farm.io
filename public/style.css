@@ -88,8 +88,8 @@ body {
     color: black;
     border-radius: 5px;
     padding: 1rem 2.5rem;
-    border: 2px solid #EBFF00;
-    background-color: #EBFF00;
+    border: 2px solid #ebff00;
+    background-color: #ebff00;
     transition: 0.1s ease;
 }
 
@@ -111,7 +111,7 @@ body {
     background-color: transparent;
     font-size: 1.6rem;
     font-weight: 600;
-    color: #F9F5C8;
+    color: #f9f5c8;
 }
 
 .dropdown-toggle.show,
@@ -127,7 +127,6 @@ body {
     gap: 1.5rem; */
     background-color: #fff;
     padding: 1.5rem 0;
-
 }
 
 .dropdown-item {
@@ -137,7 +136,7 @@ body {
 }
 
 .dropdown-item:hover {
-    color: #925A06;
+    color: #925a06;
 }
 
 .nav {
@@ -172,7 +171,7 @@ body {
 }
 
 .nav__link:hover {
-    color: #EBFF00;
+    color: #ebff00;
 }
 
 .nav__link.nav-redirect {
@@ -181,21 +180,21 @@ body {
 }
 
 .nav__link.nav-redirect:hover {
-    border-bottom: 2.5px solid #EBFF00;
+    border-bottom: 2.5px solid #ebff00;
 }
 
 .nav__link.nav-btn {
     padding: 1rem 3.5rem;
     font-size: 2rem;
     font-weight: 700;
-    color: #EBFF00;
-    border: 1.5px solid #EBFF00;
+    color: #ebff00;
+    border: 1.5px solid #ebff00;
     border-radius: 5px;
     transition: 0.2s ease;
 }
 
 .nav__link.nav-btn:hover {
-    background-color: #EBFF00;
+    background-color: #ebff00;
     color: black;
 }
 
@@ -260,13 +259,13 @@ body {
     color: #fff;
     border-radius: 5px;
     padding: 1rem 2.5rem;
-    border: 2px solid #EBFF00;
+    border: 2px solid #ebff00;
     background-color: transparent;
     transition: 0.1s ease;
 }
 
 .header__cta:first-child {
-    background-color: #EBFF00;
+    background-color: #ebff00;
 }
 
 .header__cta:active {
@@ -291,7 +290,7 @@ body {
 .sponsor__title {
     font-size: 2rem;
     font-weight: 400;
-    color: #EBFF00;
+    color: #ebff00;
 }
 
 .sponsor__logo-box {
@@ -305,31 +304,30 @@ body {
     width: 25rem;
 }
 
-.kelasLainnya{
+.kelasLainnya {
     width: 1183px;
     height: 255px;
 }
 
-.kelasLainnya .headlineLearn{
+.kelasLainnya .headlineLearn {
     font-size: 49px;
 }
-.kelasLainnya .textKecil{
-    color:#EBFF00;
+.kelasLainnya .textKecil {
+    color: #ebff00;
 }
-.kelasButton .bungkus .definisi{
+.kelasButton .bungkus .definisi {
     color: #848484;
 }
-.kelasLainnya .kelasButton{
+.kelasLainnya .kelasButton {
     text-decoration: none;
     color: black;
     padding: 1.5rem 2rem;
     border-radius: 5px;
-    background-color: #EBFF00;
+    background-color: #ebff00;
     font-size: 16px;
     font-weight: 600;
     width: 214px;
 }
-
 
 .benefit {
     display: grid;
@@ -439,7 +437,7 @@ body {
     color: black;
     padding: 1.5rem 2rem;
     border-radius: 5px;
-    background-color: #EBFF00;
+    background-color: #ebff00;
     font-size: 2rem;
     font-weight: 600;
     justify-self: start;
@@ -452,29 +450,29 @@ body {
     object-fit: cover;
 }
 
-.cardfitur .home .kartu{
+.cardfitur .home .kartu {
     width: 250px;
     height: 380px;
 }
 
-.cardfitur .home .kartu .titleCard{
+.cardfitur .home .kartu .titleCard {
     color: yellow;
     font-size: 18px;
     font-weight: bold;
 }
 
-.cardfitur .home .kartu .miniDesc{
+.cardfitur .home .kartu .miniDesc {
     font-size: 13px;
     color: grey;
 }
-.cardfitur .home .kartu .descCard{
+.cardfitur .home .kartu .descCard {
     font-size: 13px;
 }
 .cardfitur .home .kartu {
-    background-color: rgba(217, 217, 217, 0.2)
+    background-color: rgba(217, 217, 217, 0.2);
 }
 
-.moreInfo .infoImage .contentInfo .contentDesc{
+.moreInfo .infoImage .contentInfo .contentDesc {
     color: grey;
     text-align: justify;
 }
@@ -648,7 +646,7 @@ body {
 }
 
 .event__cta {
-    background-color: #EBFF00;
+    background-color: #ebff00;
 }
 
 .event__container {
@@ -764,7 +762,7 @@ body {
     font-size: 2.8rem;
     font-weight: 600;
 }
-.footer__navigasi .navigasi{
+.footer__navigasi .navigasi {
     margin-top: 55px;
 }
 .footer__navigasi a,
@@ -792,19 +790,19 @@ body {
     margin-left: 80px;
 }
 
-.footer__link .links{
+.footer__link .links {
     margin-top: 55px;
     display: flex;
     flex-direction: column;
 }
 
-.footer__link .links a{
+.footer__link .links a {
     color: white;
     font-size: 20px;
     text-decoration: none;
 }
 
-.footer__link .links a img{
+.footer__link .links a img {
     margin-right: 20px;
 }
 .footer__link h1 {
@@ -818,35 +816,32 @@ body {
     color: #f4f4f4;
 }
 
-
-#loginn .bagianKiri{
+#loginn .bagianKiri {
     background: url(asset/hitamKiri.png);
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
 }
-#loginn .right{
+#loginn .right {
     background: url(asset/gambarKanan2.png);
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
-
 }
-#regist .bagianKiri{
+#regist .bagianKiri {
     background: url(asset/hitamKiri.png);
     background-attachment: fixed;
     background-position: center;
     background-size: 100%;
 }
-#regist .right{
+#regist .right {
     background: url(asset/gambarKanan2.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat !important;
     background-size: 100%;
-    
-    z-index: -1;
 
+    z-index: -1;
 }
 .login-form {
     background-color: white;
@@ -923,7 +918,7 @@ body {
     height: 50px;
     margin-top: 20px;
     border-radius: 5px;
-    background-color: #EBFF00;
+    background-color: #ebff00;
     border: none;
     color: black;
     font-size: 20px;
@@ -935,7 +930,7 @@ body {
     height: 50px;
     margin-top: 32px;
     border-radius: 5px;
-    background-color: #EBFF00;
+    background-color: #ebff00;
     border: none;
     color: white;
     font-size: 20px;
@@ -1001,7 +996,7 @@ body {
     height: 30px;
     margin-top: 20px;
     border-radius: 5px;
-    background-color: #EBFF00;
+    background-color: #ebff00;
     border: none;
     color: black;
     font-size: 20px;
@@ -1019,4 +1014,46 @@ body {
     width: 200px;
     position: absolute;
     margin: 39px 0 0 38px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: rgb(0, 0, 0);
+}
+
+input {
+    margin: 0 0.5rem 0 0.5rem;
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+
+    color: rgb(1, 1, 1);
+}
+
+::placeholder {
+    color: #000000;
+}
+.HE {
+    font-size: 20px;
+    text-align: center;
+    color: #f9f5c8;
+}
+
+.cardE {
+    font: #000;
+}
+.jelajah {
+    width: 15rem;
+    height: 4rem;
+    background-color: #ebff00;
+    font-size: 13px;
+    text-align: center;
+    font-family: inherit;
+    font-weight: bold;
 }
