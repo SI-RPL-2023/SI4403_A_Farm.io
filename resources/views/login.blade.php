@@ -45,7 +45,7 @@
         
                     </form>
                     <p style="color: #9F9F9F; margin-top: 10px;" class="sign_up">Anda belum memiliki akun ?<span
-                                style="color: #7aa60b;"><a href="/register">Daftar</a></span></p>
+                                style="color: #7aa60b;"><a href="/register"> Daftar</a></span></p>
                 </div>
             </div>
             <div class="col-md-7 min-vh-100 right">

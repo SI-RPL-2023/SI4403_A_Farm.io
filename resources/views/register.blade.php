@@ -49,7 +49,7 @@
         
                     </form>
                     <p style="color: #9F9F9F; margin-top: 10px;" class="sign_up">Anda sudah memiliki akun ?<span
-                                style="color: #7aa60b;"><a href="/login">Login</a></span></p>
+                                style="color: #7aa60b;"><a href="/login"> Login</a></span></p>
                 </div>
             </div>
             <div class="col-md-7 min-vh-100 right">
