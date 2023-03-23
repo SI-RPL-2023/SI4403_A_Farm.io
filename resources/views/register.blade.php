@@ -23,7 +23,7 @@
     <img src="asset/Logo.png" alt="Dunia Tani" class="register-login__logo">
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-md-5 min-vh-100 bagianKiri">
+            <div class="col-md-5 min-vh-100 d-flex align-items-center bagianKiri">
                 <div class="register-form shadow-lg rounded border-3 border rounded-5">
                     <h1 style="color: black; font-size: 31px;">Daftar</h1>
                     <h2 style="color: #939393; font-size: 16px; margin-top: 8px;">Daftar dengan menggunakan data diri yang sesuai</h2>
@@ -38,13 +38,13 @@
                     <form action="/login" class="form-register" method="post">
                         @csrf
                         <label for="name">Name</label>
-                        <input style="padding-left: 16px" type="text" name="name" placeholder="Enter your full name" required>
+                        <input style="padding-left: 16px; border-radius: 10px;" type="text" name="name" placeholder="Enter your full name" required>
                         <label for="email">Email</label>
-                        <input style="padding-left: 16px" type="email" name="email" placeholder="Enter your email" required>
+                        <input style="padding-left: 16px; border-radius: 10px;" type="email" name="email" placeholder="Enter your email" required>
                         <label for="username">Username</label>
-                        <input style="padding-left: 16px" name="username" type="text" placeholder="enter your username" required>
+                        <input style="padding-left: 16px; border-radius: 10px;" name="username" type="text" placeholder="enter your username" required>
                         <label for="password">Password</label>
-                        <input style="padding-left: 16px" name="password" type="password" placeholder="enter your password" required>
+                        <input style="padding-left: 16px; border-radius: 10px;" name="password" type="password" placeholder="enter your password" required>
                         <button type="submit" name="login">Daftar</button>
         
                     </form>
