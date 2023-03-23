@@ -23,3 +23,4 @@ The repository is structured as follows:
 
 -   `main` is main branch of the repository and contains the latest stable version of the code.
 -   `dev` is the development branch of the repository and contains the latest development version of the code.
+ 
