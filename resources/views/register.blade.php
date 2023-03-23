@@ -35,7 +35,7 @@
                     </div>
                     @endif
         
-                    <form action="/login" class="form-register" method="post">
+                    <form action="/register" class="form-register" method="post">
                         @csrf
                         <label for="name">Name</label>
                         <input style="padding-left: 16px; border-radius: 10px;" type="text" name="name" placeholder="Enter your full name" required>

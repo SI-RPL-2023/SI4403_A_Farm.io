@@ -26,6 +26,7 @@ Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 
 
 Route::get('/register', [RegistController::class, 'index']);
+Route::post('/register', [RegistController::class, 'store']);
 
 
 
