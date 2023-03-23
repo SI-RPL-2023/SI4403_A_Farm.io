@@ -9,7 +9,7 @@
         padding-top: 5%
     }
     h1{
-        font-size: 75px
+        font-size: 85px
     }
     p{
         font-size: 15px
@@ -53,6 +53,11 @@
                     </div>
                     </div>
                 </div>
+                <div>
+                <img class="position-absolute bottom-0 end-0" style=" width: 400px" src="../../../asset/titik1.png" alt="">
+                <img class="position-absolute top-0 start-50 translate-middleç-x" style=" width: 400px" src="../../../asset/titik.svg" alt="">
+                <img class="position-absolute top-50 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
+                </div>
                 <div class="col-6">
                     <div class="row">
                         <div class="col rounded-5 p-5 border w-100 bg-light bg-opacity-25" style='backdrop-filter: blur(10px);'>
@@ -65,21 +70,22 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                <img class="position-absolute bottom-0 end-0" style=" width: 400px" src="../../../asset/titik1.png" alt="">
-                <img class="position-absolute top-0 start-50 translate-middle-x" style=" width: 400px" src="../../../asset/titik.svg" alt="">
-                <img class="position-absolute top-50 start-0 translate-middle-y" style=" width: 400px" src="../../../asset/Frame 1063.png" alt="">
-                </div>
-        </section>
-        
+            </section>
+            <br>
+        </br>
+
         <section class="fitur">
             <div class="container d-flex align-content-center justify-content-center">
                 <div style="text-align: center">
                     <p style="color:yellow"><b>Solusi Peternakanku</b></p><br><br>
-                    <h1 style="font-size: 60px">Apa saja yang anda dapatkan dengan <br> bergabung kepada Farm House ?</h1><br>
+                    <h1 style="font-size: 40px">Apa saja yang anda dapatkan dengan <br> bergabung kepada Farm House ?</h1><br>
                     <p>Selesaikan masalah seputar perternakan dan mendapatkan hasil ternak yang baik.</p><br>
+                    <br>
+                    </br>
+                    <br>
                 </div>
             </div>
+            
             <div class="container align-content-center justify-content-center">
                 <div class="cardfitur">
                     <div class="row align-items-center justify-content-center home">
@@ -128,7 +134,7 @@ ribuan artikel, video pembelajaran, tentang Perternakan.</p>
             <div class="container">
                 <div>
                     <p style="color:yellow"><b>Manfaat Platform</b></p><br><br>
-                    <h1 style="font-size: 52px">Dapatkan ilmu perternakan yang baik dan bermutu, <br> agar mendapatkan hasil yang sangat memuaskan !</h1><br>
+                    <h1 style="font-size: 40px">Dapatkan ilmu perternakan yang baik dan bermutu, <br> agar mendapatkan hasil yang sangat memuaskan !</h1><br>
                     <p>Pelajari bagaimana solusi kami menghemat waktu dan uang dalam hal bidang perternakan. </p><br>
                 </div>
                 <div class="kalender d-flex justify-content-center align-items-center">
@@ -173,7 +179,6 @@ ribuan artikel, video pembelajaran, tentang Perternakan.</p>
                 </div>
             </div>
         </section>
-
         <section class="community mt-5">
             <div class="community__box">
                 <h2 class="community__subtle">Dipercaya Oleh 900K+ Siswa</h2>
@@ -183,7 +188,6 @@ ribuan artikel, video pembelajaran, tentang Perternakan.</p>
             </div>
             <img src="asset/testimoni 2.png" alt="testimoni" class="community__img">
         </section>
-
         <section class="sponsor">
             <h1 class="sponsor__title" style="margin-top: 60px">Sponsored by beloved partners</h1>
             <div class="sponsor__logo-box align-items-center">
@@ -207,6 +211,7 @@ ribuan artikel, video pembelajaran, tentang Perternakan.</p>
                 </div>
                 <a href="" class="course__cta cta">Lihat Kelas Lainnya</a>
             </div>
+            
             <div class="course__container">
                 <div class="course__card">
                     <img src="asset/testing1.png" alt="" class="course__img">
@@ -231,6 +236,7 @@ ribuan artikel, video pembelajaran, tentang Perternakan.</p>
                         <a href="" class="course__card-cta cta">Buy Class</a>
                     </div>
                 </div>
+                
                 <div class="course__card">
                     <img src="asset/testing2.svg" alt="" class="course__img">
                     <h1>Monitor Hasil peternakan Menggunakan Teknologi</h1>
