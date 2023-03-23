@@ -2,9 +2,9 @@
 <div align="center">
 <img src="https://i.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.webp">
 </div>
-<br> 
-
-
+<br>
+ 
+ 
 ## TUGAS BESAR REKAYASA PERANGKAT LUNAK
 Pada tugas besar Rekayasa Perangkat Lunak (RPL) ini kami membuat sebuah website bernama `FarmHouse`. `FarmHouse` adalah sebuah website tentang edukasi dunia peternakan. Website ini dibuat menggunakan [PHP](https://www.php.net/) dan [Laravel](https://laravel.com/) sebagai framework untuk Backend dan [HTML](https://en.wikipedia.org/wiki/HTML) dan [CSS](https://en.wikipedia.org/wiki/CSS) dengan framework [Bootstrap](https://getbootstrap.com/) untuk Frontend.
 
@@ -24,6 +24,59 @@ Kami merupakan kelompok 233 (FarmHousers)  yang berasal dari kelas SI-44-03, pro
 
 The repository is structured as follows:
 
--   `main` is main branch of the repository and contains the latest stable version of the code.
--   `dev` is the development branch of the repository and contains the latest development version of the code.
- 
+-   `main` adalah main branch repositori dan berisi kode versi stabil terbaru.
+-   `dev` adalah development branch repositori dan berisi versi pengembangan kode terbaru.
+-   `feature/feature_name` adalah Branch repositori yang digunakan untuk mengembangkan fitur baru dan digabungkan menjadi dev saat sudah selesai.
+
+## Cara Menjalankan Aplikasi
+*Salin perintah ini di terminal kamu atau git bash*
+
+- Clone project from github
+
+```bash
+git clone https://github.com/SI-RPL-2023/SI4402_228_TITIPAN.git 
+```
+
+- Copy the .env.example file to .env
+
+```bash
+cp .env.example .env
+```
+
+- Change the database name in the .env file
+
+```bash
+DB_PORT=your_mysql_port
+DB_DATABASE=your_database_name
+```
+
+- Install Composer
+
+```bash
+composer install
+```
+
+- Generate Key
+
+```bash
+php artisan key:generate
+```
+
+- Migrate Database
+
+```bash
+php artisan migrate
+```
+
+- Link Storage
+
+```bash
+php artisan storage:link
+```
+
+- Run the server
+
+```bash
+php artisan serve
+```
+
