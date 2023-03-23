@@ -24,9 +24,9 @@ Kami merupakan kelompok 233 (FarmHousers)  yang berasal dari kelas SI-44-03, pro
 
 The repository is structured as follows:
 
--   `main` is main branch repositori dan berisi kode versi stabil terbaru.
--   `dev` is the development branch repositori dan berisi versi pengembangan kode terbaru.
--   `feature/feature_name` Branch repositori yang digunakan untuk mengembangkan fitur baru dan digabungkan menjadi dev saat sudah selesai.
+-   `main` adalah main branch repositori dan berisi kode versi stabil terbaru.
+-   `dev` adalah development branch repositori dan berisi versi pengembangan kode terbaru.
+-   `feature/feature_name` adalah Branch repositori yang digunakan untuk mengembangkan fitur baru dan digabungkan menjadi dev saat sudah selesai.
 
 ## Cara Menjalankan Aplikasi
 *Salin perintah ini di terminal kamu atau git bash*
