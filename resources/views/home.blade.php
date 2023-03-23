@@ -30,34 +30,46 @@
     <div class="app">
         @include('partial.navbar')
         <section class="jumbotron" >
-            <div class="container d-flex align-content-center justify-content-center">
-                <div class="row align-items-center home">
-                  <div class="col-md-4">
-                      <h1 class="fw-bold">Farm House</h1>
-                      <h1 class="fw-bold" style="color:yellow">Education</h1>
-                    <p>Membantu peternak dan calon peternak untuk <br> 
-                        meningkatkan pengetahuan mereka tentang <br> 
-                        peternakan. Dalam aplikasi ini, mereka dapat <br> 
-                        belajar tentang berbagai aspek peternakan seperti <br>
-                        manajemen peternakan, nutrisi hewan, kesehatan <br>
-                        hewan, dan lain sebagainya.!</p>
-                    <button type="button" class="btn btn-warning"
-                        style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px; background-color:yellow;">
-                        <b>Join For Free</b>
-                    </button>
-                    <button type="button" class="btn btn-outline-light"
-                        style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px; ">
-                        <b>View All Event</b>
-                    </button>
-                  </div>
-                  <div class="col-md-8">
-                    <iframe width="794" height="430" src="https://www.youtube.com/embed/nbXjnumdKwg" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen></iframe>
-                  </div>
+            <div class="container d-flex align-content-center justify-content-between align-items-center"> 
+                <div class="col-5">
+                    <div class="row align-items-center home">
+                    <div class="col w-100">
+                        <h1 class="fw-bold">Farm House</h1>
+                        <h1 class="fw-bold" style="color:yellow">Education</h1>
+                        <p>Membantu peternak dan calon peternak untuk <br> 
+                            meningkatkan pengetahuan mereka tentang <br> 
+                            peternakan. Dalam aplikasi ini, mereka dapat <br> 
+                            belajar tentang berbagai aspek peternakan seperti <br>
+                            manajemen peternakan, nutrisi hewan, kesehatan <br>
+                            hewan, dan lain sebagainya.!</p>
+                        <button type="button" class="btn btn-warning"
+                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px;">
+                            <b>Join For Free</b>
+                        </button>
+                        <button type="button" class="btn btn-outline-light"
+                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px;">
+                            <b>View All Event</b>
+                        </button>
+                    </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col rounded-5 p-5 border w-100 bg-light bg-opacity-25" style='backdrop-filter: blur(10px);'>
+                            <iframe class="w-100" height="439" src="https://www.youtube.com/embed/nbXjnumdKwg" 
+                            title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen style="background-color: #fff"></iframe>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                <img class="position-absolute bottom-0 end-0" style=" width: 400px" src="../../../asset/titik1.png" alt="">
+                <img class="position-absolute top-0 start-50 translate-middle-x" style=" width: 400px" src="../../../asset/titik.svg" alt="">
+                <img class="position-absolute top-50 start-0 translate-middle-y" style=" width: 400px" src="../../../asset/Frame 1063.png" alt="">
+                </div>
         </section>
         
         <section class="fitur">
