@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\RegistController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\ComunityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,16 +23,20 @@ use App\Http\Controllers\RegistController;
 
 
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
-
+Route::post('/login', [LoginController::class, 'authenticate']);
 
 
 
 Route::get('/register', [RegistController::class, 'index']);
+Route::post('/register', [RegistController::class, 'store']);
 
 
 
 
 Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/event', [EventController::class, 'displayEvent']);
+Route::get('/comunity', [ComunityController::class, 'comun']);
 
 Route::get('/guruternak/login', [GuruController::class, 'loginGuru']);
 Route::post('/guruternak/login', [LoginController::class, 'authenticate']);

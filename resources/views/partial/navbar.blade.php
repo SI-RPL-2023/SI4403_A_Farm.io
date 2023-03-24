@@ -3,7 +3,7 @@
     <div class="nav__box">
         <a href="/" class="nav__link">Home</a>
         <a href="/event" class="nav__link">Events</a>
-        <a href="/community" class="nav__link">Community</a>
+        <a href="/comunity" class="nav__link">Community</a>
         <a href="/course" class="nav__link">Courses</a>
 
         @auth

@@ -18,7 +18,8 @@ Kami merupakan kelompok 233 (FarmHousers)  yang berasal dari kelas SI-44-03, pro
 | 3   | [Novan Janis Aditya Halawa](https://www.instagram.com/novanjanis)    | 1202201382 | Programmer      |
 | 4   | [Fadli Izurohman](https://www.instagram.com/izurohmanq)              | 1202204033 | Programmer      |
 | 5   | [Ruben Adisuryo Nugroho](https://www.instagram.com/rubenadi_)        | 1202200152 | Programmer      |
-| 6   | [Diki Ilham Firmansyah] (https://www.instagram.com/diki_if)           | 1202202134 | Programmer      |
+| 6   | [Diki Ilham Firmansyah](https://www.instagram.com/diki_if)           | 1202202134 | Programmer      |
+
 
 ## Repository Structure
 
@@ -79,3 +80,4 @@ php artisan storage:link
 ```bash
 php artisan serve
 ```
+
