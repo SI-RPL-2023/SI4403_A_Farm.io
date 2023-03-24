@@ -6,13 +6,17 @@
         background-color: #2B2B2B
     }
     .jumbotron{
-        padding-top: 5%
+        padding-top: 5%;
     }
     h1{
-        font-size: 85px
+        font-size: 80px;
+        font-family: inter;
+        font-weight: 600;
     }
     p{
-        font-size: 15px
+        font-size: 16px;
+        font-family: inter;
+        color: #D5D5D5;
     }
     button{
         margin-top: 4%;

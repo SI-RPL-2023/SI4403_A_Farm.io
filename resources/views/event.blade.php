@@ -6,13 +6,17 @@
         background-color: #2B2B2B
     }
     .jumbotron{
-        padding-top: 5%
+        padding-top: 5%;
     }
     h1{
-        font-size: 50px
+        font-size: 55px;
+        font-family: inter;
+        font-weight: 600;
     }
     p{
-        font-size: 15px
+        font-size: 16px;
+        font-family: inter;
+        color: #D5D5D5;
     }
     button{
         margin-top: 4%;
@@ -27,8 +31,11 @@
     }
 </style>
 <body>
+    
     <div class="app">
         @include('partial.navbar')
+        <img class="position-absolute bottom-0 end-0" style=" width: 400px" src="../../../asset/titik1.png" alt="">
+        <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
         <section class="jumbotron" >
             <div class="container ">
                 <div class="row">
@@ -38,17 +45,18 @@
                     <p class="mt-5">Manfaatkan kesempatan untuk menyelami pembelajaran yang tak ternilai dalam acara terbaru kami.</p>
                   </div>
                   <div class="col">
-                    <div>
-                        <img src="asset/embe.png" alt="">
+                      <div>
+                          <img src="asset/embe.png" alt="">
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </section>
         <form action="">
         <div class="input-wrapper mt-5">
                 <div class="fa fa-search mr-2"></div>
-                <input class="rounded"  type="text" placeholder="   Search" />
+                <i class="fas fa-search"></i>
+                <input class="rounded"  type="text" placeholder="   Search" style= "font-size: 20px; font-color:#939393; width: 1280px; height: 66px; left: 90px; top: 673px; " />
                 <div class="fa fa-times"></div>
               </div>
         </form>

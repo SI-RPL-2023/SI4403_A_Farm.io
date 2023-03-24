@@ -1,6 +1,29 @@
 <!doctype html>
 <html lang="en">
+<style>
+    body{
+        background-color: #2B2B2B
+    }
+    .jumbotron{
+        padding-top: 5%;
+    }
+    h1{
+        font-size: 80px;
+        font-family: inter;
+        font-weight: 600;
+    }
+    p{
+        font-size: 14px;
+        font-family: inter;
+        color: #D5D5D5;
+    }
+    button{
+        margin-top: 4%;
+        margin-right: 4%;
+        font-style: bold;
+    }
 
+</style>
 <head>
     @include("partial.header")
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
