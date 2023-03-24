@@ -15,10 +15,10 @@
                 {{ auth()->user()->username }}
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="/gurutani/inbox">My Inbox</a></li>
-                <li><a class="dropdown-item" href="/gurutani/addclass">Add Class</a></li>
-                <li><a class="dropdown-item" href="/gurutani/addclass">My Course</a></li>
-                <li><a class="dropdown-item" href="/gurutani/setting">Edit Profile</a></li>
+                <li><a class="dropdown-item" href="/guruternak/inbox">My Inbox</a></li>
+                <li><a class="dropdown-item" href="/guruternak/addclass">Add Class</a></li>
+                <li><a class="dropdown-item" href="/guruternak/addclass">My Course</a></li>
+                <li><a class="dropdown-item" href="/guruternak/setting">Edit Profile</a></li>
                 <li>
                     <form action="/logout" method="post">
                         @csrf
@@ -54,7 +54,7 @@
         </div>
         @endif
         @else
-        <a href="/gurutani/login" class="nav__link nav-redirect">Login sebagai  Guru Ternak</a>
+        <a href="/guruternak/login" class="nav__link nav-redirect">Login sebagai  Guru Ternak</a>
         <a href="/login" class="nav__link nav-btn">Login</a>
         @endauth
 
