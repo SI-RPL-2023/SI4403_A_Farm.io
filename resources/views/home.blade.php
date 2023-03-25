@@ -112,7 +112,7 @@
             <div class="container align-content-center justify-content-center">
                 <div class="cardfitur">
                     <div class="row align-items-center justify-content-center home">
-                        <div class="kartu col-md-3 text-center py-5 px-4 me-3 border rounded-5 justify-content-center align-items-center">
+                        <div class="kartu col-md-3 text-center py-5 px-4 me-5 border rounded-5 justify-content-center align-items-center">
                             <img src="asset/belajar.png" class="mb-3" alt="">
                             <p class="titleCard">Belajar Pertanian</p>
                             <p class="descCard my-4">Memahami inovasi terbaru di industri melalui
@@ -120,7 +120,7 @@
                             <p class="miniDesc"> Belajar tentang berbagai aspek peternakan seperti manajemen 
                                 peternakan, nutrisi hewan, kesehatan hewan, dan lain sebagainya.</p>
                         </div>
-                        <div class="kartu col-md-3 text-center py-5 px-4 me-3 border rounded-5 justify-content-center align-items-center">
+                        <div class="kartu col-md-3 text-center py-5 px-4 me-5 border rounded-5 justify-content-center align-items-center">
                             <img src="asset/belanja.png" class="mb-3" alt="">
                             <p class="titleCard">Belanja Hasil Peternakan</p>
                             <p class="descCard mt-4">Dapatkan produk perternakan terbaik yang ditanam dengan metode terbaru 
@@ -128,7 +128,7 @@
                             <p class="miniDesc"> Dapatkan hasil perternak langsung dari sumber yang telah diolah para peternak 
                                 dari hasil ternaknya sendiri, terjamin kualitas produk tanpa bahan penawet</p>
                         </div>
-                        <div class="kartu col-md-3 text-center py-5 px-4 me-3 border rounded-5 justify-content-center align-items-center">
+                        <div class="kartu col-md-3 text-center py-5 px-4 me-5 border rounded-5 justify-content-center align-items-center">
                             <img src="asset/tingkat.png" class="mb-3" alt="">
                             <p class="titleCard">Tingkatkan Hasil Ternak</p>
                             <p class="descCard my-4">Memahami inovasi terbaru di industri melalui
@@ -209,7 +209,7 @@ ribuan artikel, video pembelajaran, tentang Perternakan.</p>
                 <h2 class="community__subtle">Dipercaya Oleh 900K+ Siswa</h2>
                 <h1 class="community__title">Bergabunglah dengan Suporter Kami Komunitas 😊</h1>
                 <p class="community__desc">Sebuah komunitas terbentuk untuk satu sama lain membantu dalam mencapai Peternakan yang baik.</p>
-                <a href="" class="community__cta cta">Lihat Semua</a>
+                <a href="/course" class="community__cta cta">Lihat Semua</a>
             </div>
             <img src="asset/testimoni 2.png" alt="testimoni" class="community__img">
             <img class="position-absolute end-0 translate-middle-y dikanan" style=" width: 700px" src="../../../asset/Frame 1064.png" alt="">

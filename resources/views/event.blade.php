@@ -36,7 +36,7 @@
         @include('partial.navbar')
         <img class="position-absolute bottom-0 end-0" style=" width: 400px" src="../../../asset/titik1.png" alt="">
         <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
-        <section class="jumbotron" >
+        <section class="jumbotron mb-5" >
             <div class="container ">
                 <div class="row">
                   <div class="col align-items-center" style="padding-top: 75px">
@@ -44,22 +44,19 @@
                       <h1 class="mt-3">Tambahkan relasi dengan berpartisipasi dalam acara bertani</h1>
                     <p class="mt-5">Manfaatkan kesempatan untuk menyelami pembelajaran yang tak ternilai dalam acara terbaru kami.</p>
                   </div>
-                  <div class="col">
+                    <div class="col">
                       <div>
                           <img src="asset/embe.png" alt="">
                         </div>
                     </div>
                 </div>
+                <form action="" method="" class="course-input-box mt-5">
+                        <img src="asset/search.png" alt="">
+                        <input type="text" class="course-input" name="search" value="" autocomplete="off"
+                            placeholder="Search course">
+                </form>
             </div>
         </section>
-        <form action="">
-        <div class="input-wrapper mt-5">
-                <div class="fa fa-search mr-2"></div>
-                <i class="fas fa-search"></i>
-                <input class="rounded"  type="text" placeholder="   Search" style= "font-size: 20px; font-color:#939393; width: 1280px; height: 66px; left: 90px; top: 673px; " />
-                <div class="fa fa-times"></div>
-              </div>
-        </form>
         <section class="fitur">
             
             <div class="container d-flex pb-5">

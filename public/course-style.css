@@ -1,28 +1,32 @@
+body{
+    background-color: #2B2B2B
+}
 .course-header {
     height: calc(100vh - 8.5rem);
-    background-image: linear-gradient(0, rgba(0,0,0,.4), rgba(0,0,0,.4)), url('asset/course-banner.png');
     background-size: cover;
     padding: 2rem 9rem;
     display: grid;
     grid-template-columns: 50%;
     grid-auto-rows: min-content;
     grid-gap: 2rem;
-    align-content: center;
+    align-items: center;
 }
 
 .course-header h2 {
-    font-size: 2.5rem;
+    font-size: 16px;
     font-weight: 600;
+    color: #ebff00;
 }
 
 .course-header h1 {
-    font-size: 3.6rem;
+    font-size: 49px;
     font-weight: 600;
 }
 
 .course-header p {
-    font-size: 2rem;
+    font-size: 16px;
     font-weight: 400;
+    color: #848484;
 }
 
 .course-container {
@@ -35,9 +39,12 @@
 }
 
 .course-input-box {
+    width: 100%;
     display: grid;
     grid-template-columns: min-content 1fr;
     align-items: center;
+    justify-content: center;
+    margin: auto;
     grid-gap: 5px;
     padding: 2rem 3rem;
     border-radius: 10px;
@@ -86,7 +93,7 @@
 .course-sideFilter h2 {
     font-size: 2.4rem;
     font-weight: 700;
-    color: #000;
+    color: #ebff00;
 }
 
 .course-sideFilter .form-check {

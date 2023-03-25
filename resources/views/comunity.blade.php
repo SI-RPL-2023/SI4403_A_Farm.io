@@ -39,8 +39,8 @@
                   <div class="col align-items-center" style="padding-top: 75px">
                       <h5 class="fw-bold align-items-center" style="color:yellow">Farm House Komunitas</h5>
                       <h1 class="mt-3">Pengaruh Anda Dimulai Disini</h1>
-                    <p class="mt-5">Komunitas Farm House adalah sebuah komunitas tempat para peminat dan ahli pertanian di Indonesia berkumpul untuk berbagi dan berkembang bakat pertanian masa depan. Tidak peduli apa titik awal Anda adalah, kami bertujuan untuk mendukung setiap ide dan menciptakan dampak besar, dan itu dimulai dari Anda.</p>
-                    <a href="/login" class="btn mt-5 jelajah align-items-center" >jelajahi komunitas</a>
+                    <p class="my-5">Komunitas Farm House adalah sebuah komunitas tempat para peminat dan ahli pertanian di Indonesia berkumpul untuk berbagi dan berkembang bakat pertanian masa depan. Tidak peduli apa titik awal Anda adalah, kami bertujuan untuk mendukung setiap ide dan menciptakan dampak besar, dan itu dimulai dari Anda.</p>
+                    <a href="" class="jelajah mt-5">Jelajahi Komunitas</a>
                   </div>
                   <div class="col">
                     <div>

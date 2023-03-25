@@ -147,6 +147,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary);
+    z-index: 1;
 }
 
 .nav__logo {
@@ -900,7 +901,7 @@ body {
     width: 396px;
     height: 48px;
     border-radius: 5px;
-    border-color: #939393;
+    border: 3px solid #D5D5D5;
     margin-top: 8px;
     margin-bottom: 8px;
 }
@@ -982,7 +983,7 @@ body {
     width: 396px;
     height: 40px;
     border-radius: 5px;
-    border-color: #939393;
+    border: 3px solid #D5D5D5;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -1049,11 +1050,14 @@ input {
     font: #000;
 }
 .jelajah {
-    width: 15rem;
-    height: 4rem;
-    background-color: #ebff00;
-    font-size: 13px;
+    text-decoration: none;
     text-align: center;
-    font-family: inherit;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    border-radius: 5px;
+    padding: 1rem 2.5rem;
+    border: 2px solid #ebff00;
+    background-color: #ebff00;
+    transition: 0.1s ease;
 }

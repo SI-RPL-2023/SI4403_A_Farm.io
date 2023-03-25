@@ -30,7 +30,9 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::get('/register', [RegistController::class, 'index']);
 Route::post('/register', [RegistController::class, 'store']);
 
-
+// Route::resource('/course', CourseController::class);
+Route::get('/course', [CourseController::class, 'index']);
+Route::get('/course-detail', [CourseController::class, 'show']);
 
 
 Route::get('/', [HomeController::class, 'index']);
