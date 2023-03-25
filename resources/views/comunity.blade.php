@@ -29,6 +29,22 @@
     .manfaat{
         padding-top: 5%
     }
+    .garis{
+        height: 61px;
+        width: 2px;
+        background-color: #EBFF00;
+        margin-left: 35px;
+        position: absolute;
+        margin-top: -45px;
+    }
+    .garis2{
+        height: 72px;
+        width: 2px;
+        background-color: #EBFF00;
+        margin-left: 35px;
+        position: absolute;
+        margin-top: -45px;
+    }
 </style>
 <body>
     <div class="app">
@@ -76,6 +92,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="garis"></div>
                             <div class="moreInfo">
                                 <div class="infoImage d-flex mb-5 align-items-center">
                                     <img src="asset/produktifitas.png" class="me-5" alt="produktifitas">
@@ -86,6 +103,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="garis2"></div>
                             <div class="moreInfo">
                                 <div class="infoImage d-flex mb-5 align-items-center">
                                     <img src="asset/toga.png" class="me-5" alt="toga">
