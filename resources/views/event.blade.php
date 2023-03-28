@@ -67,9 +67,9 @@
             </div>
             <div class="d-flex align-content-center justify-content-center">
                 <div class="nav__box">
-                    <a href="" class="HE">ALL</a>
-                    <a href="" class="HE">Webminar</a>
-                    <a href="" class="HE">Prudct</a>
+                    <a href="" class="HE">All</a>
+                    <a href="" class="HE">Webinar</a>
+                    <a href="" class="HE">Product</a>
                     <a href="" class="HE">Other</a>
                 </div>
             </div>

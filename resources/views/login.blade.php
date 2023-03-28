@@ -43,7 +43,7 @@
 
 <body>
 <section id="loginn">
-    <img src="asset/Logo.png" alt="Dunia Tani" class="register-login__logo">
+    <a href="/"><img src="../asset/Logo.png" alt="Dunia Tani" class="register-login__logo"></a>
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-md-5 min-vh-100 d-flex align-items-center bagianKiri">

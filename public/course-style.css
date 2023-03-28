@@ -188,12 +188,15 @@ body{
 }
 
 .course-detail-feature {
+    width: 391px;
+    height: 460px;
     align-self: start;
     /* position: sticky;
     top: 0; */
-    background-color: #362C04;
+    border: 3px solid white;
+    background-color: rgba(217, 217, 217, 0.1);
     border-radius: 20px;
-    padding: 4rem 6rem;
+    padding: 2rem 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: min-content;
@@ -214,10 +217,11 @@ body{
 
 .course-detail-feature > div:not(:last-of-type) {
     padding-bottom: 2rem;
-    border-bottom: 1px solid#DFE4F7;
+    border-bottom: 2px solid#DFE4F7;
 }
 
 .course-detail-feature span {
+    margin: 0 30px;
     font-size: 1.6rem;
     font-weight: 500;
 }

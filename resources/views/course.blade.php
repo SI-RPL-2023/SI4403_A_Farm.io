@@ -65,12 +65,14 @@
                                 </span>
                             </div>
                             <div class="course__gutter"></div>
-                            <div class="course__card-transaksi">
+                            <div class="course__card-transaksi d-flex justify-content-between">
                                 <div class="course__harga">
-                                    <span class="course__harga-coret">Rp125.000</span>
+                                    <p class="course__harga-coret">Rp125.000</p>
                                     <h2 class="course__harga-asli">GRATIS</h2>
                                 </div>
-                                <a href="" class="course__card-cta cta">Buy Class</a>
+                                <div class="course__cardButton">
+                                    <a href="" class="course__card-cta cta"><b>Beli Kelas</b></a>
+                                </div>
                             </div>
                         </div>
                     </div>

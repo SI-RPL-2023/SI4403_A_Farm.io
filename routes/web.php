@@ -32,7 +32,7 @@ Route::post('/register', [RegistController::class, 'store']);
 
 // Route::resource('/course', CourseController::class);
 Route::get('/course', [CourseController::class, 'index']);
-Route::get('/course-detail', [CourseController::class, 'show']);
+Route::get('/course-detail/id', [CourseController::class, 'show']);
 
 
 Route::get('/', [HomeController::class, 'index']);

@@ -83,6 +83,7 @@
                 </div>
                 <div class="col-6">
                     <div class="row">
+                        <img class="position-absolute top-0 start-50 translate-middleç-x" style=" width: 400px" src="../asset/titik.svg" alt="">
                         <div class="col rounded-5 p-5 border w-100 bg-light bg-opacity-25" style='backdrop-filter: blur(10px);'>
                             <iframe class="w-100" height="439" src="https://www.youtube.com/embed/nbXjnumdKwg" 
                             title="YouTube video player" frameborder="0" 
@@ -112,7 +113,7 @@
             <div class="container align-content-center justify-content-center">
                 <div class="cardfitur">
                     <div class="row align-items-center justify-content-center home">
-                        <div class="kartu col-md-3 text-center py-5 px-4 me-5 border rounded-5 justify-content-center align-items-center">
+                        <div class="kartu col-md-3 text-center py-5 px-4 border rounded-5 justify-content-center align-items-center">
                             <img src="asset/belajar.png" class="mb-3" alt="">
                             <p class="titleCard">Belajar Pertanian</p>
                             <p class="descCard my-4">Memahami inovasi terbaru di industri melalui
@@ -120,7 +121,7 @@
                             <p class="miniDesc"> Belajar tentang berbagai aspek peternakan seperti manajemen 
                                 peternakan, nutrisi hewan, kesehatan hewan, dan lain sebagainya.</p>
                         </div>
-                        <div class="kartu col-md-3 text-center py-5 px-4 me-5 border rounded-5 justify-content-center align-items-center">
+                        <div class="kartu col-md-3 text-center py-5 px-4 border rounded-5 justify-content-center align-items-center">
                             <img src="asset/belanja.png" class="mb-3" alt="">
                             <p class="titleCard">Belanja Hasil Peternakan</p>
                             <p class="descCard mt-4">Dapatkan produk perternakan terbaik yang ditanam dengan metode terbaru 
@@ -128,7 +129,7 @@
                             <p class="miniDesc"> Dapatkan hasil perternak langsung dari sumber yang telah diolah para peternak 
                                 dari hasil ternaknya sendiri, terjamin kualitas produk tanpa bahan penawet</p>
                         </div>
-                        <div class="kartu col-md-3 text-center py-5 px-4 me-5 border rounded-5 justify-content-center align-items-center">
+                        <div class="kartu col-md-3 text-center py-5 px-4 border rounded-5 justify-content-center align-items-center">
                             <img src="asset/tingkat.png" class="mb-3" alt="">
                             <p class="titleCard">Tingkatkan Hasil Ternak</p>
                             <p class="descCard my-4">Memahami inovasi terbaru di industri melalui
@@ -136,7 +137,7 @@ ribuan artikel, video pembelajaran, tentang Perternakan.</p>
                             <p class="miniDesc">  Belajar tentang berbagai aspek peternakan seperti manajemen peternakan, 
                                 nutrisi hewan, kesehatan hewan, dan lain sebagainya.</p>
                         </div>
-                        <div class="kartu col-md-3 text-center py-5 px-4 me-3 border rounded-5 justify-content-center align-items-center">
+                        <div class="kartu col-md-3 text-center py-5 px-4 border rounded-5 justify-content-center align-items-center">
                             <img src="asset/belajar.png" class="mb-3" alt="">
                             <p class="titleCard">Community</p>
                             <p class="descCard my-4">Memahami inovasi terbaru di industri melalui
