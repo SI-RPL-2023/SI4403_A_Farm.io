@@ -1,10 +1,10 @@
-<div class="sidebar-gurutani sidebar">
-    <div class="sidebar-gurutani-profile sidebar-profile">
+<div class="sidebar-guru sidebar">
+    <div class="sidebar-guru-profile sidebar-profile">
         <img src="../asset/logoCircle.svg" alt="guruTernak image">
     </div>
-    <nav class="sidebar-gurutani-nav sidebar-nav mt-5">
+    <nav class="sidebar-guru-nav sidebar-nav mt-5">
         <a href="/guruternak/inbox">
-            <img src="../asset/order.png" alt="inbox">
+            <img src="../asset/speedometer.svg" alt="inbox">
            
         </a>
         <a href="/guruternak/myclass">
