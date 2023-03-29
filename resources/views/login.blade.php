@@ -1,6 +1,29 @@
 <!doctype html>
 <html lang="en">
+<style>
+    body{
+        background-color: #2B2B2B
+    }
+    .jumbotron{
+        padding-top: 5%;
+    }
+    h1{
+        font-size: 80px;
+        font-family: inter;
+        font-weight: 600;
+    }
+    p{
+        font-size: 14px;
+        font-family: inter;
+        color: #D5D5D5;
+    }
+    button{
+        margin-top: 4%;
+        margin-right: 4%;
+        font-style: bold;
+    }
 
+</style>
 <head>
     @include("partial.header")
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,10 +43,10 @@
 
 <body>
 <section id="loginn">
-    <img src="asset/Logo.png" alt="Dunia Tani" class="register-login__logo">
+    <a href="/"><img src="../asset/Logo.png" alt="Dunia Tani" class="register-login__logo"></a>
     <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-md-5 min-vh-100 bagianKiri">
+            <div class="col-md-5 min-vh-100 d-flex align-items-center bagianKiri">
                 <div class="login-form shadow-lg rounded border-3 border rounded-5">
                     <h1 style="color: black; font-size: 31px;">Login</h1>
                     <h2 style="color: #939393; font-size: 16px; margin-top: 8px;">Login dengan menggunakan data diri yang sesuai</h2>
@@ -38,14 +61,14 @@
                     <form action="/login" class="form-login w-50" method="post">
                         @csrf
                         <label for="username">Username</label>
-                        <input style="padding-left: 16px" name="username" type="text" placeholder="enter your username" required>
+                        <input style="padding-left: 16px; border-radius: 10px" name="username" type="text" placeholder="enter your username" required>
                         <label for="password">Password</label>
-                        <input style="padding-left: 16px" name="password" type="password" placeholder="enter your password" required>
+                        <input style="padding-left: 16px; border-radius: 10px;" name="password" type="password" placeholder="enter your password" required>
                         <button type="submit" name="login">Login</button>
         
                     </form>
                     <p style="color: #9F9F9F; margin-top: 10px;" class="sign_up">Anda belum memiliki akun ?<span
-                                style="color: #7aa60b;"><a href="/register">Daftar</a></span></p>
+                                style="color: #7aa60b;"><a href="/register"> Daftar</a></span></p>
                 </div>
             </div>
             <div class="col-md-7 min-vh-100 right">

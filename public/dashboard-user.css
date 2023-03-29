@@ -50,6 +50,7 @@
 }
 .sidebar-nav a img{
     width: 40px;
+    margin-bottom: 40px;
 }
 .sidebar-nav a .logout{
     transition: 0.3s ease-in-out;
@@ -73,7 +74,7 @@
     padding: 3rem 6rem;
     background-color: #fff;
     border-radius: 6px;
-    width: 70%;
+    width: 100%;
 }
 
 .dashboard-input-grup {
@@ -132,32 +133,41 @@
     padding: 4px;
     /* font-weight: 400; */
 }
-
-.order-table {
+.tableOrder{
+    background-color: white;
+}
+.tableOrder .order-table {
     border-spacing: 1rem;
+    width: 90%;
+    margin: 50px 0;
 }
 
-.order-table td {
+.tableOrder .order-table td {
     padding: 1rem;
 }
 
-.order-table thead {
-    background-color: #EAEAEA;
+.tableOrder .order-table thead {
+    background-color: white;
     padding: 1rem;
     border-radius: 5px;
 }
 
-.order-table thead td {
+.tableOrder .order-table thead td {
     font-size: 1.4rem;
     font-weight: 500;
-}
+    border: 0.5px solid black;
 
-.order-table tbody td {
+}
+.tableOrder .order-table tbody {
+    background-color: white;
+}
+.tableOrder .order-table tbody td {
     font-size: 1.2rem;
     padding-top: 2rem;
+    border: 1px solid black;
 }
 
-.order-status {
+.tableOrder .order-status {
     padding: 8px;
     border-radius: 4px;
     font-weight: 600;
@@ -168,6 +178,8 @@
     grid-template-columns: repeat(3, 23rem);
     grid-auto-rows: min-content;
     grid-gap: 3rem;
+    padding: 60px;
+    background-color: white;
 }
 
 .class-card {
@@ -178,6 +190,7 @@
     padding: 2rem;
     background-color: #fff;
     border-radius: 5px;
+    border: 3px solid black;
 }
 
 .class-card img {
@@ -199,4 +212,12 @@
     font-size: 1.2rem;
     padding: 6px !important;
     justify-self: end;
+}
+
+.class-subtle{
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: -30px;
+    width: auto;
 }

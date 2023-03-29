@@ -7,24 +7,27 @@
         @include('partial.navbar')
         <div class="dashboard addclass">
             @include('partial.sidebar-guru')
-
             <div class="addclass-box dashboard-box">
-                <h1 style="text-decoration: underline;text-decoration-color: #C5D22E;" >Add Course</h1>
-                <p>Add a new course and get paid from what you thought</p>
+                <h1 style="text-decoration: underline;text-decoration-color: #C5D22E;" >Tambah Kelas</h1>
+                <p>Tambah</p>
+                <div class="class-subtle dashboard-subtle">
+                        <img src="../asset/edit.svg" alt="">
+                        Tambah Kelas
+                </div>
                 <form action="/gurutani/addclass" class="dashboard-form" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="addclass-subtle dashboard-subtle">
                         <img src="../asset/edit.svg" alt="">
-                        Add Course
+                        Tambah Kelas
                     </div>
 
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="title">Course Title</label>
-                        <input type="text" name="title" id="title" value="" placeholder="Enter course title" required>
+                        <input class="w-100" type="text" name="title" id="title" value="" placeholder="Enter course title" required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="title">skillLevel</label>
-                        <input type="text" name="skillLevel" id="title" value="" placeholder="Enter Skill Level"
+                        <input class="w-100" type="text" name="skillLevel" id="title" value="" placeholder="Enter Skill Level"
                             required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
@@ -35,7 +38,7 @@
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="harga">Course Price</label>
-                        <input type="number" name="price" id="harga" min="0" max='200000' value=""
+                        <input class="w-100" type="number" name="price" id="harga" min="0" max='200000' value=""
                             placeholder="Enter course price" required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
@@ -44,9 +47,10 @@
                             class="setting-edit-photo" required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
-                        <label for="course-vid">Thumbnail</label>
-                        <input type="file" name="thumbnail" id="course-vid" class="addclass-video" class=""
-                            accept="image/*" class="setting-edit-photo" required>
+                        <label for="thumbnail">Thumbnail</label>
+                        <img class="img-preview img-fluid mb-3 col-md-5">
+                        <input class="w-100" type="file" name="thumbnail" id="thumbnail" class="addclass-video" class=""
+                            accept="image/*" class="setting-edit-photo" required onchange="previewImage()">
                     </div>
                     <button class="addclass-cta cta" type="submit">Submit</button>
                 </form>
@@ -57,6 +61,19 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // for preview image
+    function previewImage() {
+        const image = document.querySelector("#thumbnail");
+        const imgPreview = document.querySelector('.img-preview');
+        imgPreview.style.display = 'block';
+        const oFReader = new FileReader();
+        oFReader.readAsDataURL(image.files[0]);
+        oFReader.onload = function(oFREvent) {
+            imgPreview.src = oFREvent.target.result;
+        }
+    }
+    </script>
 </body>
 
 </html>

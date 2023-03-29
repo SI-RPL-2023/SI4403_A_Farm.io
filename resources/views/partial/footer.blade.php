@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" style="margin-top: 15%">
     <div class="footer__box">
         <div class="footer__profile">
             <img src="../asset/Logo.png" class="logoFarm" alt="Farmio">
@@ -30,13 +30,13 @@
         <div class="footer__link">
             <h1>Quick Links</h1>
             <div class="links">
-                <a href=""><img src="asset/arrow-circle-right.png" alt="">Home</a>
+                <a href="/"><img src="asset/arrow-circle-right.png" alt="">Home</a>
                         
-                <a href=""><img src="asset/arrow-circle-right.png" alt="">Courses</a>
+                <a href="/course"><img src="asset/arrow-circle-right.png" alt="">Courses</a>
                     
-                <a href=""><img src="asset/arrow-circle-right.png" alt="">Event</a>
+                <a href="/event"><img src="asset/arrow-circle-right.png" alt="">Event</a>
                     
-                <a href=""><img src="asset/arrow-circle-right.png" alt="">Community</a>
+                <a href="/comunity"><img src="asset/arrow-circle-right.png" alt="">Community</a>
                      
                 <a href=""><img src="asset/arrow-circle-right.png" alt="">Toko</a>
                     
