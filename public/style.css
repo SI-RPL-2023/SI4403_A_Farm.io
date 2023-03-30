@@ -58,6 +58,7 @@ body {
     grid-auto-rows: min-content;
     grid-gap: 3rem;
     color: #000;
+    background-color: #EAEAEA;
     padding: 5rem 9rem 12rem;
 }
 
@@ -147,6 +148,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary);
+    z-index: 1;
 }
 
 .nav__logo {
@@ -184,7 +186,7 @@ body {
 }
 
 .nav__link.nav-btn {
-    padding: 1rem 3.5rem;
+    padding: 10px 70px;
     font-size: 2rem;
     font-weight: 700;
     color: #ebff00;
@@ -453,6 +455,7 @@ body {
 .cardfitur .home .kartu {
     width: 250px;
     height: 380px;
+    margin-right: 60px;
 }
 
 .cardfitur .home .kartu .titleCard {
@@ -528,10 +531,13 @@ body {
 }
 
 .course__card {
+    width: 382px;
+    height: 559px;
     display: grid;
+    margin: auto;
     grid-template-columns: 1fr;
     grid-auto-rows: min-content;
-    grid-gap: 2rem;
+    grid-gap: 0.5rem;
     padding: 2rem 3rem;
     border-radius: 8px;
     background-color: white;
@@ -546,12 +552,14 @@ body {
 
 .course__card h1 {
     font-size: 2.2rem;
+    padding: 9px 0;
     font-weight: 700;
     color: #0a0a0a;
 }
 
 .course__card p {
     font-size: 1.5rem;
+    padding-bottom: 9px;
     font-weight: 400;
     color: #989b9e;
 }
@@ -591,8 +599,7 @@ body {
 
 .course__harga {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .course__harga-coret {
@@ -900,7 +907,7 @@ body {
     width: 396px;
     height: 48px;
     border-radius: 5px;
-    border-color: #939393;
+    border: 3px solid #D5D5D5;
     margin-top: 8px;
     margin-bottom: 8px;
 }
@@ -982,7 +989,7 @@ body {
     width: 396px;
     height: 40px;
     border-radius: 5px;
-    border-color: #939393;
+    border: 3px solid #D5D5D5;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -1049,11 +1056,14 @@ input {
     font: #000;
 }
 .jelajah {
-    width: 15rem;
-    height: 4rem;
-    background-color: #ebff00;
-    font-size: 13px;
+    text-decoration: none;
     text-align: center;
-    font-family: inherit;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    border-radius: 5px;
+    padding: 1rem 2.5rem;
+    border: 2px solid #ebff00;
+    background-color: #ebff00;
+    transition: 0.1s ease;
 }

@@ -29,21 +29,39 @@
     .manfaat{
         padding-top: 5%
     }
+    .garis{
+        height: 61px;
+        width: 2px;
+        background-color: #EBFF00;
+        margin-left: 35px;
+        position: absolute;
+        margin-top: -45px;
+    }
+    .garis2{
+        height: 72px;
+        width: 2px;
+        background-color: #EBFF00;
+        margin-left: 35px;
+        position: absolute;
+        margin-top: -45px;
+    }
 </style>
 <body>
     <div class="app">
         @include('partial.navbar')
+        <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px;"  src="../../../asset/Frame 1063.png" alt="">
         <section class="jumbotron" >
             <div class="container ">
                 <div class="row">
                   <div class="col align-items-center" style="padding-top: 75px">
                       <h5 class="fw-bold align-items-center" style="color:yellow">Farm House Komunitas</h5>
                       <h1 class="mt-3">Pengaruh Anda Dimulai Disini</h1>
-                    <p class="mt-5">Komunitas Farm House adalah sebuah komunitas tempat para peminat dan ahli pertanian di Indonesia berkumpul untuk berbagi dan berkembang bakat pertanian masa depan. Tidak peduli apa titik awal Anda adalah, kami bertujuan untuk mendukung setiap ide dan menciptakan dampak besar, dan itu dimulai dari Anda.</p>
-                    <a href="/login" class="btn mt-5 jelajah align-items-center" >jelajahi komunitas</a>
+                    <p class="my-5">Komunitas Farm House adalah sebuah komunitas tempat para peminat dan ahli pertanian di Indonesia berkumpul untuk berbagi dan berkembang bakat pertanian masa depan. Tidak peduli apa titik awal Anda adalah, kami bertujuan untuk mendukung setiap ide dan menciptakan dampak besar, dan itu dimulai dari Anda.</p>
+                    <a href="" class="jelajah mt-5">Jelajahi Komunitas</a>
                   </div>
                   <div class="col">
                     <div>
+                        <img class="position-absolute bottom-0 end-0" style=" width: 400px; z-index:-1;" src="../../../asset/titik1.png" alt="">
                         <img src="asset/embe.png" alt="">
                     </div>
                   </div>
@@ -74,6 +92,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="garis"></div>
                             <div class="moreInfo">
                                 <div class="infoImage d-flex mb-5 align-items-center">
                                     <img src="asset/produktifitas.png" class="me-5" alt="produktifitas">
@@ -84,6 +103,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="garis2"></div>
                             <div class="moreInfo">
                                 <div class="infoImage d-flex mb-5 align-items-center">
                                     <img src="asset/toga.png" class="me-5" alt="toga">

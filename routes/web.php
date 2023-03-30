@@ -3,10 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\EventController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\RegistController;
-use App\Http\Controllers\EventController;
 use App\Http\Controllers\ComunityController;
 
 /*
@@ -30,7 +31,9 @@ Route::post('/login', [LoginController::class, 'authenticate']);
 Route::get('/register', [RegistController::class, 'index']);
 Route::post('/register', [RegistController::class, 'store']);
 
-
+// Route::resource('/course', CourseController::class);
+Route::get('/course', [CourseController::class, 'index']);
+Route::get('/course-detail/id', [CourseController::class, 'show']);
 
 
 Route::get('/', [HomeController::class, 'index']);
@@ -55,6 +58,19 @@ Route::delete('/guruternak/myclass/{course}', [CourseController::class, 'destroy
 
 Route::get('/guruternak/editclass', [CourseController::class, 'editclass']);
 Route::put('/guruternak/editclass/{course}', [CourseController::class, 'update']);
+
+// route for user pelajar
+
+Route::put('/user/{user}', [UserController::class, 'update']);
+
+Route::get('/user/order', [UserController::class, 'myorder']);
+
+Route::get('/user/class', [UserController::class, 'myclass']);
+
+Route::get('/user/setting', [UserController::class, 'setting']);
+Route::put('/user/setting/{user}', [UserController::class, 'update']);
+
+
 
 Route::post('/logout', [LoginController::class, 'logout']);
 
