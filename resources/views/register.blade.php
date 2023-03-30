@@ -17,7 +17,7 @@
 
 } */
 </style>
-
+<!-- ini bagian registrasi User pelajar -->
 <body>
 <section id="regist">
     <img src="asset/Logo.png" alt="Dunia Tani" class="register-login__logo">
