@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KonfirController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\HomeController;
@@ -10,6 +11,9 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\RegistController;
 use App\Http\Controllers\ComunityController;
 use App\Http\Controllers\CheckoutController;
+use App\Http\Controllers\CoController;
+
+
 
 
 /*
@@ -37,6 +41,9 @@ Route::post('/register', [RegistController::class, 'store']);
 Route::get('/course', [CourseController::class, 'index']);
 Route::get('/course-detail/id', [CourseController::class, 'show']);
 Route::get('/checkout', [CheckoutController::class, 'checkout1']);
+Route::get('/checkout2', [CoController::class, 'checkout2']);
+Route::get('/konfirmasi', [KonfirController::class, 'konfirmasi']);
+
 
 
 Route::get('/', [HomeController::class, 'index']);

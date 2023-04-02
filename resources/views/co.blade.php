@@ -94,7 +94,7 @@
                             </p>
                             <img src="asset/tanda.png" alt="">
                         </div>
-                        <p class="mt-5">
+                        <p class=" fw-bold mt-5">
                             Payment details
                         </p>
                         <div class="d-flex justify-content-between  mt-5">
@@ -109,6 +109,24 @@
                             <p>Total Transfer</p>
                             <p >Rp 200,000</p>
                         </div>
+                        <p class=" fw-bold mt-5">
+                            Payment details
+                        </p>
+                        <img src="asset/bni.png" class="mt-5" alt="">
+                        <p class="mt-5">
+                            PT Ternakin Indonesia (Admin Diki Ilham Firmansyah)
+                        </p>
+                        <p class="fw-boldmt-5">
+                            0280256315
+                        </p>
+                        <hr>
+                        <img src="asset/mandiri.png" class="mt-5" alt="">
+                        <p class="mt-5">
+                            PT Ternakin Indonesia (Admin Rafid fadhil)
+                        </p>
+                        <p class="fw-bold mt-5">
+                            0280256315
+                        </p>
                         <div class="d-grid mt-5 mb-5">
                                         <!-- Button trigger modal -->
 <button type="button" class="btn" style="height: 50px; font-size:24px; background-color:#EBFF00" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -139,6 +157,7 @@
                                 <p style="font-size: 20px">
                                     +62042242242424    
                                 </p>    
+                                
                             </div>              
                         </div>
                     </div>
@@ -156,12 +175,15 @@
         </div>
         <div class="d-flex flex-column justify-content-center align-items-center  modal-body">
             <img src="asset/alert.png" style="width: 75px; height: 76px" alt="">
+            <p class="text-dark fw-bold mt-5 fs-2">
+                0280256315
+            </p>
             <p class="text-dark mt-5 fs-2">
                 Apakah Anda yakin  ingin melakukan transaksi ?
             </p>
             <div class="mt-5">
-                <button type="button" class="btn fs-2  me-5" data-bs-target="#bayar" data-bs-toggle="modal" style=" width:120px; height: 50px; background-color:#EBFF00">Iya</button>
-              <button type="button" class="btn btn-secondary fs-2" data-bs-dismiss="modal" style=" width:120px; height: 50px" >tidak</button>
+                <button type="button" class="btn fs-2  me-5" data-bs-target="#konfir" data-bs-toggle="modal" style=" width:120px; height: 50px; background-color:#EBFF00">sudah</button>
+              <button type="button" class="btn btn-secondary fs-2" data-bs-dismiss="modal" style=" width:120px; height: 50px" >belum</button>
             </div>
         </div>
         <div class="modal-footer">
@@ -170,106 +192,38 @@
       </div>
     </div>
   </div>
+  <!-- Modal -->
+<div class="modal fade" id="konfir" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+              
+    
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center  modal-body">
+              <img src="asset/verify.png" style="width: 75px; height: 76px" alt="">
+              <p class="text-dark fw-bold mt-5 fs-2">
+                Tunggu Sebentar !
+              </p>
+              <p class="text-dark mt-5 fs-2 text-center">
+                Jika Berhasil, Anda Dialihkan ke halaman dalam waktu 3 detik...
+              </p>
+              <div class="mt-5">
+                  <button type="button" class="btn fs-2  me-5" data-bs-target="#konfir" data-bs-toggle="modal" style=" width:120px; height: 50px; background-color:#EBFF00">sudah</button>
+                <button type="button" class="btn btn-secondary fs-2" data-bs-dismiss="modal" style=" width:120px; height: 50px" >belum</button>
+              </div>
+          </div>
+          <div class="modal-footer">
+            
+          </div>
+        </div>
+      </div>
+  </div>
+    
     @include('partial.footer')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Modal -->
-<div class="modal fade" id="bayar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog rounded rounded-5">
-        <div class="modal-contentrounded rounded-5">
-            <div class="modal-header px-5" style="background-color: #320F07; height: 120px">
-                <img src="asset/logo.png" style="width: 150px; margin-top: -20px" alt="">
-            </div>
-        </div>
-        <div class="modal-body bg-light text-dark">
-    <div class="d-flex justify-content-between rounded rounded-4 shadow mx-5 p-4 position-relative bg-white" style="top: -45px;">
-        <div >
-            <p style="font-size: 15px;">
-                Total
-            </p>
-            <h2 class="fw-bold mt-3">Rp200.000</h2>
-            <p class="mt-2">
-                Order ID #Duta-10923
-            </p>
-        </div>
-        <div class="text-end">
-            <p class="text-muted">
-                Choose Within: <a class="text-decoration-none text-dark fw-bold">23:55:26</a>
-            </p>
-            <img src="asset/icon.png" alt="">
-        </div>
-
-        
-    </div>
-    <div>
-
-        <h1 class="ms-5 text-muted">
-            Select method
-        </h1>
-        <h2 class=" mt-5 ms-5 fw-bold">
-            Bank transfer 
-        </h2>
-        <img src="asset/Frame 940.png" class="ms-5 mt-5" alt="" style="width: 400px">
-         <hr>   
-        <h2 class=" mt-5 ms-5 fw-bold">
-            Other e-Wallets 
-        </h2>
-    </div>
-        <img src="asset/Frame 935.png" class="ms-5 mt-5" alt="" style="width: 75px">
-   
     
-     <hr>   
-      </div>
-    </div>
-  </div>
-    <!-- Modal -->
-<div class="modal fade" id="qr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog rounded rounded-5">
-        <div class="modal-contentrounded rounded-5">
-            <div class="modal-header px-5" style="background-color: #320F07; height: 120px">
-                <img src="asset/logo.png" style="width: 150px; margin-top: -20px" alt="">
-            </div>
-        </div>
-        <div class="modal-body bg-light text-dark">
-    <div class="d-flex justify-content-between rounded rounded-4 shadow mx-5 p-4 position-relative bg-white" style="top: -45px; z-index: 99;">
-        <div >
-            <p style="font-size: 15px;">
-                Total
-            </p>
-            <h2 class="fw-bold mt-3">Rp200.000</h2>
-            <p class="mt-2">
-                Order ID #Duta-10923
-            </p>
-        </div>
-        <div class="text-end">
-            <p class="text-muted">
-                Choose Within: <a class="text-decoration-none text-dark fw-bold">23:55:26</a>
-            </p>
-            <img src="asset/icon.png" alt="">
-        </div>
-
-        
-    </div>
-    <h1 class="ms-5 text-muted">
-        Select method
-    </h1>
-    <h2 class=" mt-5 ms-5 fw-bold">
-        Bank transfer 
-    </h2>
-    <img src="asset/Frame 940.png" class="ms-5 mt-5" alt="" style="width: 400px">
-     <hr>   
-    <h2 class=" mt-5 ms-5 fw-bold">
-        Other e-Wallets 
-    </h2>
-    <button type="button" class="btn fs-2  me-5" data-bs-target="#bayar" data-bs-toggle="modal" >
-        <img src="asset/Frame 935.png" class="ms-5 mt-5" alt="" style="width: 75px">
-
-    </button>
-    
-     <hr>   
-      </div>
-    </div>
-  </div>
  
 </body>
   
