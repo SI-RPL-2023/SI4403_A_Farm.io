@@ -8,6 +8,8 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\RegistController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\ComunityController;
+use App\Http\Controllers\CheckoutController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +35,7 @@ Route::post('/register', [RegistController::class, 'store']);
 // Route::resource('/course', CourseController::class);
 Route::get('/course', [CourseController::class, 'index']);
 Route::get('/course-detail/id', [CourseController::class, 'show']);
+Route::get('/checkout', [CheckoutController::class, 'checkout1']);
 
 
 Route::get('/', [HomeController::class, 'index']);
