@@ -12,6 +12,10 @@
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E;">Kelas yang tersedia</h1>
                 <p>Kelas yang dimiliki</p>
 
+                <div class="class-subtle dashboard-subtle">
+                        <img src="../asset/edit.svg" alt="">
+                        Kelas yang Dimiliki
+                </div>
                 <div class="class-container dashboard__guru-myclass">
                     <div class="course__card dashboard__guru-myclass-card">
                         <img src="../asset/contoh_aset.svg" alt="thumbnail"

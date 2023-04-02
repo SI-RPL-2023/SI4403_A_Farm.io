@@ -58,6 +58,7 @@ body {
     grid-auto-rows: min-content;
     grid-gap: 3rem;
     color: #000;
+    background-color: #EAEAEA;
     padding: 5rem 9rem 12rem;
 }
 

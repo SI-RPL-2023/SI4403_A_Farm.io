@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\User;
 use App\Models\Order;
-use App\Models\Gurutani;
+use App\Models\Guru;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -42,7 +42,7 @@ class GuruController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Gurutani  $user
+     * @param  \App\Models\Guru  $user
      * @return \Illuminate\Http\Response
      */
     // public function update(Request $request, User $user)
@@ -85,7 +85,7 @@ class GuruController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Models\User  $user
-     * @param  \App\Models\Gurutani  $user
+     * @param  \App\Models\Guru  $user
      * @return \Illuminate\Http\Response
      */
 
