@@ -531,8 +531,6 @@ body {
 }
 
 .course__card {
-    width: 382px;
-    height: 559px;
     display: grid;
     margin: auto;
     grid-template-columns: 1fr;
@@ -545,9 +543,9 @@ body {
 }
 
 .course__img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .course__card h1 {

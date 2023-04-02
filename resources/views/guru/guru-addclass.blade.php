@@ -9,7 +9,10 @@
             @include('partial.sidebar-guru')
             <div class="addclass-box dashboard-box">
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E;" >Tambah Kelas</h1>
-                <p>Tambah</p>
+                <div class="tagBungkus d-flex align-items-center">
+                    <p>Tambah</p>
+                    <img src="../asset/security.png" class="ms-5" alt="">
+                </div>
                 <div class="class-subtle dashboard-subtle">
                         <img src="../asset/edit.svg" alt="">
                         Tambah Kelas
@@ -43,15 +46,16 @@
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="course-vid">Course Video</label>
-                        <input type="file" name="video" id="course-vid" class="addclass-video" class=""
+                        <input type="text" name="video" id="course-vid" placeholder="Enter Link Video" class="w-100"
                             class="setting-edit-photo" required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="thumbnail">Thumbnail</label>
                         <img class="img-preview img-fluid mb-3 col-md-5">
-                        <input class="w-100" type="file" name="thumbnail" id="thumbnail" class="addclass-video" class=""
+                        <input type="file" name="thumbnail" id="thumbnail" class="addclass-video" class=""
                             accept="image/*" class="setting-edit-photo" required onchange="previewImage()">
                     </div>
+                    <!-- tombol submit -->
                     <button class="addclass-cta cta" type="submit">Submit</button>
                 </form>
             </div>

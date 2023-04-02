@@ -9,11 +9,13 @@
             @include('partial.sidebar-guru')
 
             <div class="class-box dashboard-box">
-                <h1>My Registered Class</h1>
-                <p>List of class that you want to edit</p>
+                <h1 style="text-decoration: underline;text-decoration-color: #C5D22E;">Kelas yang tersedia</h1>
+                <div class="tagBungkus d-flex align-items-center">
+                    <p>Kelas yang dimiliki</p>
+                    <img src="../asset/coin.png" class="ms-5" alt="">
+                </div>
                 <div class="class-subtle dashboard-subtle">
-                    <img src="../asset/edit.svg" alt="">
-                    My Registered Class
+                    Kelas yang dimiliki
                 </div>
 
                 <div class="class-container dashboard__guru-myclass">
@@ -22,7 +24,7 @@
                         <img src="{{ asset('storage/thumbnails/products/'.$ord->thumbnail) }}" alt="thumbnail"
                             class="course__img">
                         <h1>{{$ord->title}}</h1>
-                        <p>{{Str::limit($ord->description)}}</p>
+                        <p>{{Str::limit($ord->description, 30)}}</p>
                         <div class="course__gutter"></div>
                         <div class="course__card-transaksi dashboard__guru-transaksi">
                             <div class="course__harga">
@@ -33,8 +35,21 @@
                             <form action="/guruternak/myclass/{{ $ord->id }}" method="post">
                                 @csrf
                                 @method('delete')
-                                <button class="course__card-cta dahsboard__guru-delete cta" type="submit"
-                                    onclick="return confirm('yakin untuk menghapus course')">Delete</button>
+                                <button class="course__card-cta dahsboard__guru-delete cta" type="button"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+                                
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content bugkusModal bg-white p-5 text-center rounded-4 mt-5">
+                                                <img src="../asset/warning-2.png" alt="warning" style="width: 200px; margin:auto;">
+                                                <h1 class="my-5">Apakah Anda Ingin Melakukkan Penghapusan kelas</h1>
+                                                <div class="modalFooter d-flex justify-content-center align-items-center">
+                                                    <button  type="submit" class="addclass-cta cta me-5">Hapus</button>
+                                                    <button type="button" class="btn bg-white cta" data-bs-dismiss="modal" >Tidak</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                             </form>
                         </div>
                     </div>

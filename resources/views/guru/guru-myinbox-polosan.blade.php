@@ -10,7 +10,10 @@
 
             <div class="order-box dashboard-box">
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E; ">Rincian Order</h1>
-                <p>Order Status</p>
+                <div class="tagBungkus d-flex align-items-center">
+                    <p>Order Status</p>
+                    <img src="../asset/book.png" class="ms-5" alt="">
+                </div>
                 <div class="class-subtle dashboard-subtle">
                         <img src="../asset/edit.svg" alt="">
                         Order Status
