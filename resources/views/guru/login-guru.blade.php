@@ -58,7 +58,7 @@
                     </div>
                     @endif
         
-                    <form action="/login" class="form-login w-50" method="post">
+                    <form action="/guruternak/login" class="form-login w-50" method="post">
                         @csrf
                         <label for="username">Username</label>
                         <input style="padding-left: 16px; border-radius: 10px" name="username" type="text" placeholder="enter your username" required>

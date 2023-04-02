@@ -29,8 +29,8 @@
                                 <span class="course__harga-coret">Rp100000</span>
                                 <h2 class="course__harga-asli">Rp{{$ord->price}}</h2>
                             </div>
-                            <a href="/gurutani/editclass" class="course__card-cta cta">Edit</a>
-                            <form action="/gurutani/myclass/{{ $ord->id }}" method="post">
+                            <a href="/guruternak/editclass" class="course__card-cta cta">Edit</a>
+                            <form action="/guruternak/myclass/{{ $ord->id }}" method="post">
                                 @csrf
                                 @method('delete')
                                 <button class="course__card-cta dahsboard__guru-delete cta" type="submit"

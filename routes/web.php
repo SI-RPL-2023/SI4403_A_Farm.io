@@ -45,7 +45,7 @@ Route::get('/guruternak/login', [GuruController::class, 'loginGuru']);
 Route::post('/guruternak/login', [LoginController::class, 'authenticate']);
 
 Route::get('/guruternak/addclass', [GuruController::class, 'addclass']);
-Route::post('/guruternak/addclass', [CourseController::class, 'store']);
+Route::post('/guruternak/addclass', [CourseController::class, 'store'])->name('course.store');
 
 Route::get('/guruternak/inbox', [GuruController::class, 'myinbox']);
 Route::put('/guruternak/inbox/{order}', [GuruController::class, 'update_status']);

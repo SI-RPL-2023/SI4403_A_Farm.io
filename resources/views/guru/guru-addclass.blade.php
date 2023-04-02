@@ -14,7 +14,7 @@
                         <img src="../asset/edit.svg" alt="">
                         Tambah Kelas
                 </div>
-                <form action="/gurutani/addclass" class="dashboard-form" method="post" enctype="multipart/form-data">
+                <form action="{{route('course.store')}}" class="dashboard-form" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="addclass-subtle dashboard-subtle">
                         <img src="../asset/edit.svg" alt="">

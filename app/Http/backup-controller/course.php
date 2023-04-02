@@ -43,9 +43,9 @@ class CourseController extends Controller
     public function store(Request $request)
     {
         // video
-        $video = explode('.', $request->file('video')->getClientOriginalName())[0];
-        $video = $video . '-' . time() . '.' . $request->file('video')->extension();
-        $request->file('video')->storeAs('public/videos/', $video);
+        // $video = explode('.', $request->file('video')->getClientOriginalName())[0];
+        // $video = $video . '-' . time() . '.' . $request->file('video')->extension();
+        // $request->file('video')->storeAs('public/videos/', $video);
         // $image_path = $request->file('image')->store('image', 'public');
         // $thumbnail = time().'.'.$request->image->extension();
         // $thumbnail_path = $request->file('thumbnail')->store('thumbnail', 'public');
@@ -61,7 +61,7 @@ class CourseController extends Controller
                 'description'=> $request->description,
                 'price'=> $request->price,
                 'title' => $request->title,
-                'video' => $video,
+                'video' => $request->video,
                 'type' => "premium",
                 'thumbnail' => $thumbnail
             ]);
@@ -73,7 +73,7 @@ class CourseController extends Controller
                 'description'=> $request->description,
                 'price'=> $request->price,
                 'title' => $request->title,
-                'video' => $video,
+                'video' => $request->video,
                 'type' => "free",
                 'thumbnail' => $thumbnail
             ]);
@@ -116,19 +116,9 @@ class CourseController extends Controller
                 'description'=> $request->description,
                 'price'=> $request->price,
                 'title' => $request->title,
-                // 'video' => $request->video,
+                'video' => $request->video,
                 'type' => "premium",
             ]);
-            if($request->file('video')){
-                // video
-                $video = explode('.', $request->file('video')->getClientOriginalName())[0];
-                $video = $video . '-' . time() . '.' . $request->file('video')->extension();
-                $request->file('video')->storeAs('public/videos/', $video);
-                Course::where('id', $course->id)
-                ->update([
-                    'video' => $video
-                ]);
-            }
             if ($request-> file('thumbnail')) {
                 // image
                 $thumbnail = explode('.', $request->file('thumbnail')->getClientOriginalName())[0];
@@ -147,19 +137,9 @@ class CourseController extends Controller
                 'description'=> $request->description,
                 'price'=> $request->price,
                 'title' => $request->title,
-                // 'video' => $request->video,
+                'video' => $request->video,
                 'type' => "free",
             ]);
-            if($request->file('video')){
-                // video
-                $video = explode('.', $request->file('video')->getClientOriginalName())[0];
-                $video = $video . '-' . time() . '.' . $request->file('video')->extension();
-                $request->file('video')->storeAs('public/videos/', $video);
-                Course::where('id', $course->id)
-                ->update([
-                    'video' => $video
-                ]);
-            }
             if ($request-> file('thumbnail')) {
                 // image
                 $thumbnail = explode('.', $request->file('thumbnail')->getClientOriginalName())[0];
@@ -171,7 +151,7 @@ class CourseController extends Controller
                 ]);
             }
         }
-        return redirect('/guruternak/editclass');
+        return redirect('/gurutani/editclass');
     }
 
     /**
@@ -289,7 +269,7 @@ class CourseController extends Controller
         $course = Course::where('guruTernak_id', auth()->user()->id)->first();
         return view('guru/guru-editclass', [
             'title' => 'Edit a Class',
-            'course' => $course
+            // 'course' => $course
         ]);
     }
 

@@ -11,7 +11,7 @@
             <div class="addclass-box dashboard-box">
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E; ">Edit Class</h1>
                 <p>Edit your registered course</p>
-                <form action="/gurutani/editclass/{{$course->id}}" class="dashboard-form" method="post" enctype="multipart/form-data">
+                <form action="/guruternak/editclass/{{$course->id}}" class="dashboard-form" method="post" enctype="multipart/form-data">
                     @csrf
                     @method('put')
                     <div class="addclass-subtle dashboard-subtle">
