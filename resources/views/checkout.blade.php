@@ -5,6 +5,7 @@
 <body>
     <div class="app">
         @include('partial.navbar')
+
         <div class="container" style="margin-top: 50px">
             <header class="row justify-content-between" style="height: 500px">
                 <div class="col-7 d-flex flex-column justify-content-between">
@@ -159,7 +160,7 @@
                 Apakah Anda yakin  ingin melakukan transaksi ?
             </p>
             <div class="mt-5">
-                <button type="button" class="btn fs-2  me-5" data-bs-dismiss="modal" style=" width:120px; height: 50px; background-color:#EBFF00">Iya</button>
+                <button type="button" class="btn fs-2  me-5" data-bs-target="#bayar" data-bs-toggle="modal" style=" width:120px; height: 50px; background-color:#EBFF00">Iya</button>
               <button type="button" class="btn btn-secondary fs-2" data-bs-dismiss="modal" style=" width:120px; height: 50px" >tidak</button>
             </div>
         </div>
@@ -171,7 +172,120 @@
   </div>
     @include('partial.footer')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modal -->
+<div class="modal fade" id="bayar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog rounded rounded-5">
+        <div class="modal-contentrounded rounded-5">
+            <div class="modal-header px-5" style="background-color: #320F07; height: 120px">
+                <img src="asset/logo.png" style="width: 150px; margin-top: -20px" alt="">
+            </div>
+        </div>
+        <div class="modal-body bg-light text-dark">
+    <div class="d-flex justify-content-between rounded rounded-4 shadow mx-5 p-4 position-relative bg-white" style="top: -45px;">
+        <div >
+            <p style="font-size: 15px;">
+                Total
+            </p>
+            <h2 class="fw-bold mt-3">Rp200.000</h2>
+            <p class="mt-2">
+                Order ID #Duta-10923
+            </p>
+        </div>
+        <div class="text-end">
+            <p class="text-muted">
+                Choose Within: <a class="text-decoration-none text-dark fw-bold">23:55:26</a>
+            </p>
+            <img src="asset/icon.png" alt="">
+        </div>
+
+        
+    </div>
+    <div>
+
+        <h1 class="ms-5 text-muted">
+            Select method
+        </h1>
+        <h2 class=" mt-5 ms-5 fw-bold">
+            Bank transfer 
+        </h2>
+        <img src="asset/Frame 940.png" class="ms-5 mt-5" alt="" style="width: 400px">
+         <hr>   
+        <h2 class=" mt-5 ms-5 fw-bold">
+            Other e-Wallets 
+        </h2>
+    </div>
+    
+    <button type="button" class="btn fs-2  mt-5 me-5" data-bs-target="#qr" data-bs-toggle="modal" style=" width:120px; height: 50px; background-color:#EBFF00" >
+        p
+        {{-- <img src="asset/Frame 935.png" class="ms-5 mt-5" alt="" style="width: 75px"> --}}
+    </button>
+    <button>
+        p
+    </button>
+    
+     <hr>   
+      </div>
+    </div>
+  </div>
+    <!-- Modal -->
+<div class="modal fade" id="qr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog rounded rounded-5">
+        <div class="modal-contentrounded rounded-5">
+            <div class="modal-header px-5" style="background-color: #320F07; height: 120px">
+                <img src="asset/logo.png" style="width: 150px; margin-top: -20px" alt="">
+            </div>
+        </div>
+        <div class="modal-body bg-light text-dark">
+    <div class="d-flex justify-content-between rounded rounded-4 shadow mx-5 p-4 position-relative bg-white" style="top: -45px; z-index: 99;">
+        <div >
+            <p style="font-size: 15px;">
+                Total
+            </p>
+            <h2 class="fw-bold mt-3">Rp200.000</h2>
+            <p class="mt-2">
+                Order ID #Duta-10923
+            </p>
+        </div>
+        <div class="text-end">
+            <p class="text-muted">
+                Choose Within: <a class="text-decoration-none text-dark fw-bold">23:55:26</a>
+            </p>
+            <img src="asset/icon.png" alt="">
+        </div>
+
+        
+    </div>
+    <h1 class="ms-5 text-muted">
+        Select method
+    </h1>
+    <h2 class=" mt-5 ms-5 fw-bold">
+        Bank transfer 
+    </h2>
+    <img src="asset/Frame 940.png" class="ms-5 mt-5" alt="" style="width: 400px">
+     <hr>   
+    <h2 class=" mt-5 ms-5 fw-bold">
+        Other e-Wallets 
+    </h2>
+    <button type="button" class="btn fs-2  me-5" data-bs-target="#bayar" data-bs-toggle="modal" >
+        <img src="asset/Frame 935.png" class="ms-5 mt-5" alt="" style="width: 75px">
+
+    </button>
+    
+     <hr>   
+      </div>
+    </div>
+  </div>
  
 </body>
   
+
+
+
+
+    @include('partial.footer')
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </html>
