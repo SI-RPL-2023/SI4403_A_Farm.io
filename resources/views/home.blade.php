@@ -49,6 +49,7 @@
         margin-top: -45px;
     }
 </style>
+<!-- ini bagian landing page -->
 <body>
     <div class="app">
         @include('partial.navbar')

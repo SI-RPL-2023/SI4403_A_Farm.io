@@ -40,7 +40,7 @@
 
 } */
 </style>
-
+<!-- ini bagian login untuk pelajar -->
 <body>
 <section id="loginn">
     <a href="/"><img src="../asset/Logo.png" alt="Dunia Tani" class="register-login__logo"></a>

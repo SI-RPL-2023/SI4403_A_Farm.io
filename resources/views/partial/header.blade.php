@@ -18,5 +18,6 @@
     <link rel="stylesheet" href="/dashboard-guru.css">
     <link rel="stylesheet" href="/community.css">
     <link rel="stylesheet" href="/event.css">
+    <link rel="stylesheet" href="/checkout.css">
     <title>Farm.io</title>
 </head>
