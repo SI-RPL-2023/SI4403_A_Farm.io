@@ -17,7 +17,7 @@ class CourseController extends Controller
      */
     public function index()
     {
-        // $course = Course::all();
+        $course = Course::all();
         return view('course', [
             'title' => 'Course',
             'course' => $course
@@ -43,9 +43,9 @@ class CourseController extends Controller
     public function store(Request $request)
     {
         // video
-        $video = explode('.', $request->file('video')->getClientOriginalName())[0];
-        $video = $video . '-' . time() . '.' . $request->file('video')->extension();
-        $request->file('video')->storeAs('public/videos/', $video);
+        // $video = explode('.', $request->file('video')->getClientOriginalName())[0];
+        // $video = $video . '-' . time() . '.' . $request->file('video')->extension();
+        // $request->file('video')->storeAs('public/videos/', $video);
         // $image_path = $request->file('image')->store('image', 'public');
         // $thumbnail = time().'.'.$request->image->extension();
         // $thumbnail_path = $request->file('thumbnail')->store('thumbnail', 'public');
@@ -61,7 +61,7 @@ class CourseController extends Controller
                 'description'=> $request->description,
                 'price'=> $request->price,
                 'title' => $request->title,
-                'video' => $video,
+                'video' => $request->video,
                 'type' => "premium",
                 'thumbnail' => $thumbnail
             ]);
@@ -73,7 +73,7 @@ class CourseController extends Controller
                 'description'=> $request->description,
                 'price'=> $request->price,
                 'title' => $request->title,
-                'video' => $video,
+                'video' => $request->video,
                 'type' => "free",
                 'thumbnail' => $thumbnail
             ]);
@@ -116,19 +116,9 @@ class CourseController extends Controller
                 'description'=> $request->description,
                 'price'=> $request->price,
                 'title' => $request->title,
-                // 'video' => $request->video,
+                'video' => $request->video,
                 'type' => "premium",
             ]);
-            if($request->file('video')){
-                // video
-                $video = explode('.', $request->file('video')->getClientOriginalName())[0];
-                $video = $video . '-' . time() . '.' . $request->file('video')->extension();
-                $request->file('video')->storeAs('public/videos/', $video);
-                Course::where('id', $course->id)
-                ->update([
-                    'video' => $video
-                ]);
-            }
             if ($request-> file('thumbnail')) {
                 // image
                 $thumbnail = explode('.', $request->file('thumbnail')->getClientOriginalName())[0];
@@ -147,20 +137,11 @@ class CourseController extends Controller
                 'description'=> $request->description,
                 'price'=> $request->price,
                 'title' => $request->title,
-                // 'video' => $request->video,
+                'video' => $request->video,
                 'type' => "free",
             ]);
-            if($request->file('video')){
-                // video
-                $video = explode('.', $request->file('video')->getClientOriginalName())[0];
-                $video = $video . '-' . time() . '.' . $request->file('video')->extension();
-                $request->file('video')->storeAs('public/videos/', $video);
-                Course::where('id', $course->id)
-                ->update([
-                    'video' => $video
-                ]);
-            }
-            if ($request-> file('thumbnail')) {
+            if ($request-> file('thumbnail')) 
+            {
                 // image
                 $thumbnail = explode('.', $request->file('thumbnail')->getClientOriginalName())[0];
                 $thumbnail = $thumbnail . '-' . time() . '.' . $request->file('thumbnail')->extension();
@@ -171,7 +152,7 @@ class CourseController extends Controller
                 ]);
             }
         }
-        return redirect('/guruternak/editclass');
+        return redirect('/guruternak/myclass');
     }
 
     /**
@@ -192,7 +173,8 @@ class CourseController extends Controller
      * @param  \App\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
-    public function displayCourseCheckout(Course $course){
+    public function displayCourseCheckout(Course $course)
+    {
         return view('course-checkout', [
             'title' => 'Course Checkout',
             'course' => $course
@@ -210,7 +192,8 @@ class CourseController extends Controller
      * @param  \App\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
-    public function displayCoursePayment(Course $course){
+    public function displayCoursePayment(Course $course)
+    {
         return view('course-payment', [
             'title' => 'Course Payment',
             'course' => $course
@@ -229,7 +212,8 @@ class CourseController extends Controller
      * @param  \App\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
-    public function PaymentMethod(Request $request){
+    public function PaymentMethod(Request $request)
+    {
         // evidence
         $evidence = explode('.', $request->file('evidence')->getClientOriginalName())[0];
         $evidence = $evidence . '-' . time() . '.' . $request->file('evidence')->extension();
@@ -272,7 +256,8 @@ class CourseController extends Controller
         ]);
     }
 
-    public function displayclass(){
+    public function displayclass()
+    {
         $course = Course::where('guruTernak_id', auth()->user()->id)->get();
         return view('guru/guru-myclass', [
             'title' => 'Course',
@@ -285,19 +270,31 @@ class CourseController extends Controller
      * @param  \App\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
-    public function editclass(){
-        $course = Course::where('guruTernak_id', auth()->user()->id)->first();
+    // public function editclass()
+    // {
+    //     $course = Course::where('guruTernak_id', auth()->user()->id)->first();
+    //     return view('guru/guru-editclass', [
+    //         'title' => 'Edit a Class',
+    //         'course' => $course
+    //     ]);
+    // }
+
+    public function editclass(string $id)
+    {
+        // $course = Course::where('guruTernak_id', auth()->user()->id)->first();
+        $course = Course::where('id', $id)->firstOrFail();
         return view('guru/guru-editclass', [
             'title' => 'Edit a Class',
             'course' => $course
         ]);
     }
 
-    public function accessvideo(){
+    public function accessvideo()
+    {
         $order = Order::where('user_id', auth()->user()->id)->first();
         return view('course-access', [
             'title' => 'Pentingnya Penggunaan Teknologi Pertanian',
-            // 'order' => $order
+            'order' => $order
         ]);
     }
 }

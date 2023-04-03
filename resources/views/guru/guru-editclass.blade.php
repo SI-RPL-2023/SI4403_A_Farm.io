@@ -7,7 +7,6 @@
         @include('partial.navbar')
         <div class="dashboard addclass">
             @include('partial.sidebar-guru')
-
             <div class="addclass-box dashboard-box">
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E; ">Edit Class</h1>
                 <p>Edit your registered course</p>
@@ -29,7 +28,7 @@
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="title">Skill Level</label>
-                        <input type="text" name="skillLevel" id="title" value="{{$course->skillLevel}}" placeholder="Edit Skill Level"
+                        <input type="text" name="skillLevel" id="skillLevel" value="{{$course->skillLevel}}" placeholder="Edit Skill Level"
                             required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
@@ -43,9 +42,8 @@
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="course-vid">Course Video</label>
-                        <input type="text" name="video" id="course-vid" class="addclass-video" class=""
-                            class="setting-edit-photo">
-                            <span>video: {{$course->video}}</span>
+                        <input type="text" value="{{$course->video}}" name="video" id="course-vid" placeholder="Enter Link Video" class="w-100"
+                            class="setting-edit-photo" required>
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="thumbnail">Thumbnail</label>

@@ -31,7 +31,7 @@
                                 <span class="course__harga-coret">Rp100000</span>
                                 <h2 class="course__harga-asli">Rp{{$ord->price}}</h2>
                             </div>
-                            <a href="/guruternak/editclass" class="course__card-cta cta">Edit</a>
+                            <a href="/guruternak/editclass/{{ $ord->id }}" class="course__card-cta cta">Edit</a>
                             <form action="/guruternak/myclass/{{ $ord->id }}" method="post">
                                 @csrf
                                 @method('delete')

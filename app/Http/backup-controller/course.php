@@ -151,7 +151,7 @@ class CourseController extends Controller
                 ]);
             }
         }
-        return redirect('/gurutani/editclass');
+        return redirect('/guruternak/myclass');
     }
 
     /**

@@ -1,5 +1,5 @@
 <nav class="nav">
-    <img src="../asset/Logo.png" alt="Farmio" class="nav__logo w-75">
+    <img src="../../asset/Logo.png" alt="Farmio" class="nav__logo w-75">
     <div class="nav__box">
         <a href="/" class="nav__link">Home</a>
         <a href="/event" class="nav__link">Events</a>
@@ -7,7 +7,7 @@
         <a href="/course" class="nav__link">Courses</a>
 
         @auth
-        @if(auth()->check() && auth()->user()->role === "gurutani" )
+        @if(auth()->check() && auth()->user()->role === "guruternak" )
 
         <div class="dropdown" id="">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"

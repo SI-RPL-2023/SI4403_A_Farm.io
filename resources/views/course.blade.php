@@ -50,10 +50,11 @@
                         placeholder="Search course">
                     </form>
                     <div class="course-content">
+                        @foreach ($course as $crs)
                         <div class="course__card">
-                            <img src="asset/testing1.png" alt="" class="course__img">
-                            <h1>Pentingnya Penggunaan Teknolgi peternakan</h1>
-                            <p>Menambahan wawasan mengenai pentingnya menggunakan teknologi pada peternakan</p>
+                            <img src="{{ asset('storage/thumbnails/products/'.$crs->thumbnail) }}" alt="image" class="course__img">
+                            <h1>{{ $crs->title }}</h1>
+                            <p>{{ Str::limit($crs->description) }}</p>
                             <div class="course__detail">
                                 <span>
                                     <img src="asset/book.svg" alt="">
@@ -68,14 +69,16 @@
                             <div class="course__card-transaksi d-flex justify-content-between">
                                 <div class="course__harga">
                                     <p class="course__harga-coret">Rp125.000</p>
-                                    <h2 class="course__harga-asli">GRATIS</h2>
+                                    <h2 class="course__harga-asli">Rp{{ $crs->price }}</h2>
                                 </div>
                                 <div class="course__cardButton">
-                                    <a href="" class="course__card-cta cta"><b>Beli Kelas</b></a>
+                                    <a href="/course-checkout/{{ $crs->id }}" class="course__card-cta cta"><b>Beli Kelas</b></a>
+                                    <a href="/course/{{ $crs->id }}" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
         </section>
