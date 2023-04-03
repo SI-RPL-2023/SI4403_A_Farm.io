@@ -23,7 +23,7 @@
                     <div class="course__card dashboard__guru-myclass-card">
                         <img src="{{ asset('storage/thumbnails/products/'.$ord->thumbnail) }}" alt="thumbnail"
                             class="course__img">
-                        <h1>{{$ord->title}}</h1>
+                        <h1>{{Str::limit($ord->title, 25)}}</h1>
                         <p>{{Str::limit($ord->description, 30)}}</p>
                         <div class="course__gutter"></div>
                         <div class="course__card-transaksi dashboard__guru-transaksi">
@@ -36,9 +36,9 @@
                                 @csrf
                                 @method('delete')
                                 <button class="course__card-cta dahsboard__guru-delete cta" type="button"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button>
+                                    data-bs-toggle="modal" data-bs-target="#deleteModal{{$ord->id}}">Delete</button>
                                 
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="deleteModal{{$ord->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content bugkusModal bg-white p-5 text-center rounded-4 mt-5">
                                                 <img src="../asset/warning-2.png" alt="warning" style="width: 200px; margin:auto;">

@@ -7,8 +7,9 @@
         <a href="/course" class="nav__link">Courses</a>
 
         @auth
+        <img src="../../asset/fotoAkun.png" alt="foto akun" style="margin-right: -30px;">
         @if(auth()->check() && auth()->user()->role === "guruternak" )
-
+        
         <div class="dropdown" id="">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">

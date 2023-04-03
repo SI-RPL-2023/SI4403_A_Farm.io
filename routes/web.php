@@ -64,7 +64,7 @@ Route::get('/guruternak/setting', [GuruController::class, 'setting']);
 Route::put('/guruternak/setting/{user}', [GuruController::class, 'update']);
 
 Route::get('/guruternak/myclass', [CourseController::class, 'displayclass']);
-Route::delete('/guruternak/myclass/{course}', [CourseController::class, 'destroy']);
+Route::delete('/guruternak/myclass/{id}', [CourseController::class, 'destroy']);
 
 Route::get('/guruternak/editclass/{id}', [CourseController::class, 'editclass']);
 Route::put('/guruternak/editclass/{course}', [CourseController::class, 'update']);

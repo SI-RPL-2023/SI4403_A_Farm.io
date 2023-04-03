@@ -51,34 +51,34 @@
                     </form>
                     <div class="course-content">
                         @foreach ($course as $crs)
-                        <div class="course__card">
-                            <img src="{{ asset('storage/thumbnails/products/'.$crs->thumbnail) }}" alt="image" class="course__img">
-                            <h1>{{ $crs->title }}</h1>
-                            <p>{{ Str::limit($crs->description) }}</p>
-                            <div class="course__detail">
-                                <span>
-                                    <img src="asset/book.svg" alt="">
-                                    13 Materi
-                                </span>
-                                <span>
-                                    <img src="asset/bookmark.svg" alt="">
-                                    Fundamental
-                                </span>
-                            </div>
-                            <div class="course__gutter"></div>
-                            <div class="course__card-transaksi d-flex justify-content-between">
-                                <div class="course__harga">
-                                    <p class="course__harga-coret">Rp125.000</p>
-                                    <h2 class="course__harga-asli">Rp{{ $crs->price }}</h2>
+                            <div class="course__card">
+                                <img src="{{ asset('storage/thumbnails/products/'.$crs->thumbnail) }}" alt="image" class="course__img">
+                                <h1>{{ Str::limit($crs->title, 25) }}</h1>
+                                <p>{{ Str::limit($crs->description, 30) }}</p>
+                                <div class="course__detail">
+                                    <span>
+                                        <img src="asset/book.svg" alt="">
+                                        13 Materi
+                                    </span>
+                                    <span>
+                                        <img src="asset/bookmark.svg" alt="">
+                                        Fundamental
+                                    </span>
                                 </div>
-                                <div class="course__cardButton">
-                                    <a href="/course-checkout/{{ $crs->id }}" class="course__card-cta cta"><b>Beli Kelas</b></a>
-                                    <a href="/course/{{ $crs->id }}" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a>
+                                <div class="course__gutter"></div>
+                                <div class="course__card-transaksi d-flex justify-content-between">
+                                    <div class="course__harga">
+                                        <p class="course__harga-coret">Rp125.000</p>
+                                        <h2 class="course__harga-asli">Rp{{ $crs->price }}</h2>
+                                    </div>
+                                    <div class="course__cardButton">
+                                        <a href="/course-checkout/{{ $crs->id }}" class="course__card-cta cta"><b>Beli Kelas</b></a>
+                                        <!-- <a href="/course/{{ $crs->id }}" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a> -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
                     </div>
-                    @endforeach
                 </div>
             </div>
         </section>

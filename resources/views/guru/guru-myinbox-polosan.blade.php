@@ -14,8 +14,30 @@
                     <p>Order Status</p>
                     <img src="../asset/book.png" class="ms-5" alt="">
                 </div>
+                <div class="report">
+                    <div class="reportData">
+                        <div class="headData">
+                            <img src="../asset/tasReport.png" alt="logo">
+                            <h2>Total Order</h2>
+                        </div>
+                        <h1>263K</h1>
+                    </div>
+                    <div class="reportData">
+                        <div class="headData">
+                            <img src="../asset/orangReport.png" alt="logo">
+                            <h2>Total Order</h2>
+                        </div>
+                        <h1>263K</h1>
+                    </div>
+                    <div class="reportData">
+                        <div class="headData">
+                            <img src="../asset/ceklistReport.png" alt="logo">
+                            <h2>Total Order</h2>
+                        </div>
+                        <h1>263K</h1>
+                    </div>
+                </div>
                 <div class="class-subtle dashboard-subtle">
-                        <img src="../asset/edit.svg" alt="">
                         Order Status
                 </div>
                 <div class="tableOrder">
