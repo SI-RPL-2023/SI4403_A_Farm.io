@@ -8,7 +8,7 @@
 
         @auth
         <img src="../../asset/fotoAkun.png" alt="foto akun" style="margin-right: -30px;">
-        @if(auth()->check() && auth()->user()->role === "guruternak" )
+        @if(auth()->check() && auth()->user()->role === "guru" )
         
         <div class="dropdown" id="">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
