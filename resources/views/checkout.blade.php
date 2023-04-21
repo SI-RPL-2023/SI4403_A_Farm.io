@@ -117,7 +117,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="info rounded rounded-4 col-4 p-5">
+                <div class="info_ rounded rounded-4 col-4 p-5">
                     <div class="mr-5">
                         <h3 class="titleDetail ">Important information</h3>
                         <p class="mt-5 text-muted">The class payment confirmation process will take around 20 minutes (from the WhatsApp message sent) if using the manual payment method. Please wait patiently and thank you.</p>

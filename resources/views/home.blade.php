@@ -86,7 +86,7 @@
                     <div class="row">
                         <img class="position-absolute top-0 start-50 translate-middleç-x" style=" width: 400px" src="../asset/titik.svg" alt="">
                         <div class="col rounded-5 p-5 border w-100 bg-light bg-opacity-25" style='backdrop-filter: blur(10px);'>
-                            <iframe class="w-100" height="439" src="https://www.youtube.com/embed/nbXjnumdKwg" 
+                            <iframe class="w-100 " style="border-radius: 10px;;"height="439" src="https://www.youtube.com/embed/nbXjnumdKwg" 
                             title="YouTube video player" frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowfullscreen style="background-color: #fff"></iframe>
