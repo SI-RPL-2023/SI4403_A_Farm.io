@@ -15,24 +15,24 @@
                     <img src="../asset/edit.svg" alt="">
                     Kelas Saya
                 </div>
-                <form action="/user/setting/ auth()->user()->id " class="dashboard-form">
+                <form action="/user/setting/{{auth()->user()->id}} " class="dashboard-form">
                     @csrf
                     @method("PUT")
 
 
                     <div class="setting-input-grup dashboard-input-grup">
                         <label for="name">Name (Max. 50 characters)</label>
-                        <input type="text" name="name" id="name" value="auth()->user()->name"
+                        <input type="text" name="name" id="name" value="{{auth()->user()->name}}"
                             placeholder="Enter your name">
                     </div>
                     <div class="setting-input-grup dashboard-input-grup">
                         <label for="username">Username (Max. 50 characters)</label>
-                        <input type="text" name="username" id="username" value="auth()->user()->username"
+                        <input type="text" name="username" id="username" value="{{auth()->user()->username}}"
                             placeholder="Enter your username">
                     </div>
                     <div class="setting-input-grup dashboard-input-grup">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" value="auth()->user()->email"
+                        <input type="email" name="email" id="email" value="{{auth()->user()->email}}"
                             placeholder="Enter your email" disabled>
                     </div>
                     <div class="setting-input-grup dashboard-input-grup">

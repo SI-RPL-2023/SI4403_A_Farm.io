@@ -51,21 +51,21 @@
         @include('partial.navbar')
         <div class="eventDetail">
             <div class="coverEvent">
-                <img src="/asset/event.png" alt="" class="imageEvent">
+                <img src="/asset/{{$event->image}}" alt="" style="height:900px" class="imageEvent">
                 <div class="event-left">
                     <h2>#Acara untuk Dihadiri</h2>
-                    <h1>Pentingnya penggunaan teknologi dalam peternakan</h1>
-                    <p>Menambah wawasan mengenai pentingnya menggunakan teknologi pada peternakan untuk memudahkan peternak </p>
+                    <h1>{{$event->judul}}</h1>
+                    <p>{{$event->deskripsi}}</p>
                 </div>
             </div>
 
             <div class="eventDesc">
                     <h2>#Acara untuk Dihadiri</h2>
-                    <h1>Pentingnya penggunaan teknologi dalam peternakan</h1>
-                    <p>Menambah wawasan mengenai pentingnya menggunakan teknologi pada peternakan untuk memudahkan peternak </p>
+                    <h1>{{$event->judul}}</h1>
+                    <p>{{$event->deskripsi}}</p>
             </div>
             <div class="benefitEvent">
-                <h2>Benefit Penggunaan teknologi dalam peternakan</h2>
+                <h2>Benefit {{$event->judul}}</h2>
             </div>
 
             <div class="containerCardEvent">

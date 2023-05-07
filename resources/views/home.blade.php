@@ -23,6 +23,9 @@
         margin-right: 4%;
         font-style: bold;
     }
+    #hide{
+        display: none !important;
+    }
     .fitur{
         padding-top: 5%;
     }
@@ -66,14 +69,14 @@
                             belajar tentang berbagai aspek peternakan seperti <br>
                             manajemen peternakan, nutrisi hewan, kesehatan <br>
                             hewan, dan lain sebagainya.!</p>
-                        <button type="button" class="btn btn-warning"
-                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px;">
+                        <a id="{{ auth()->check() ? 'hide' : ''}}" type="button" class="btn btn-warning" href="/register"
+                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px; margin-top:10px;margin-right:15px">
                             <b>Join For Free</b>
-                        </button>
-                        <button type="button" class="btn btn-outline-light"
-                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px;">
+                        </a>
+                        <a type="button" class="btn btn-outline-light" href="/event"
+                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px;margin-top:10px">
                             <b>View All Event</b>
-                        </button>
+                        </a>
                     </div>
                     </div>
                 </div>

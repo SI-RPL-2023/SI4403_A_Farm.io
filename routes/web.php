@@ -32,7 +32,7 @@ use App\Http\Controllers\CoController;
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 
-Route::get('/logout', [LoginController::class, 'logout']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
 
 Route::get('/register', [RegistController::class, 'index']);
@@ -51,7 +51,7 @@ Route::get('/konfirmasi', [KonfirController::class, 'konfirmasi']);
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/event', [EventController::class, 'displayEvent']);
-Route::get('/event-detail/1', [EventController::class, 'eventDetail']);
+Route::get('/event-detail/{id}', [EventController::class, 'eventDetail']);
 Route::get('/comunity', [ComunityController::class, 'comun']);
 
 Route::get('/guruternak/login', [GuruController::class, 'loginGuru']);
@@ -81,6 +81,7 @@ Route::get('/user/order', [UserController::class, 'myorder']);
 Route::get('/user/class', [UserController::class, 'myclass']);
 
 Route::get('/user/setting', [UserController::class, 'setting']);
+Route::get('/user/setting/{user}', [UserController::class, 'update']);
 Route::put('/user/setting/{user}', [UserController::class, 'update']);
 
 

@@ -16,9 +16,12 @@ class EventController extends Controller
         ]);
     }
 
-    public function eventDetail() {
+    public function eventDetail(string $id) {
+        $event = Event::where('id', $id)->firstOrFail();
         return view('event-detail', [
-            'title' => 'Detail'
+            'title' => 'Detail',
+            'event' => $event
+
         ]);
     }
 }

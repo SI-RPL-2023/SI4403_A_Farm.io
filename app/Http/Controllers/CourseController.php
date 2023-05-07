@@ -62,10 +62,11 @@ class CourseController extends Controller
         // $image_path = $request->file('image')->store('image', 'public');
         // $thumbnail = time().'.'.$request->image->extension();
         // $thumbnail_path = $request->file('thumbnail')->store('thumbnail', 'public');
-        // $request->thumbnail->move(public_path('thumbails'), $thumbnail);
         $thumbnail = explode('.', $request->file('thumbnail')->getClientOriginalName())[0];
         $thumbnail = $thumbnail . '-' . time() . '.' . $request->file('thumbnail')->extension();
-        $request->file('thumbnail')->storeAs('public/thumbnails/products/', $thumbnail);
+        // $request->file('thumbnail')->storeAs('public/thumbnails/products/', $thumbnail);
+        $request->thumbnail->move(public_path('asset/thumbnails'), $thumbnail);
+
         if($request->price > 0 ){
             Course::create([
                 'guruTernak_id' => auth()->user()->id,

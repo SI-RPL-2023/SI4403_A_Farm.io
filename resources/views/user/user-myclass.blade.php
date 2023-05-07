@@ -17,27 +17,17 @@
                 </div>
 
                 <div class="class-container">
-                    
-                    
+                    @foreach ($order as $ord)
+                    @if($ord->status == "Verified")
+
                     <div class="class-card">
-                        <img src="asset('storage/thumbnails/products/'. $ord->cover)" alt="">
-                        <h1>$ord->title</h1>
-                        <p>$ord->created_at</p>
+                        <img src="../asset/thumbnails/{{$ord->thumbnail}}" alt="">
+                        <h1>{{$ord->title}}</h1>
+                        <p>{{$ord->created_at}}</p>
                         <a href="/course-video" class="class-cta cta">Start Learn</a>
                     </div>
-                    <div class="class-card">
-                        <img src="asset('storage/thumbnails/products/'. $ord->cover)" alt="">
-                        <h1>$ord->title</h1>
-                        <p>$ord->created_at</p>
-                        <a href="/course-video" class="class-cta cta">Start Learn</a>
-                    </div>
-                    <div class="class-card">
-                        <img src="asset('storage/thumbnails/products/'. $ord->cover)" alt="">
-                        <h1>$ord->title</h1>
-                        <p>$ord->created_at</p>
-                        <a href="/course-video" class="class-cta cta">Start Learn</a>
-                    </div>
-                    
+                    @endif
+                    @endforeach
 
                 </div>
 

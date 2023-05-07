@@ -30,22 +30,22 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- foreach $order as $ord -->
+                            @foreach ($order as $ord)
                             <tr>
                                 <td>1</td>
-                                <td><img src="asset('storage/thumbnails/products/'. $ord->cover)" class="order-cover"
+                                <td><img src="asset('storage/thumbnails/products/'. {{$ord->cover}})" class="order-cover"
                                         alt=""></td>
-                                <td class="order-name">$ord->title</td>
-                                <td>$ord->type</td>
-                                <td>$ord->price</td>
-                                <td>$ord->created_at</td>
-                                <td><span class="bg-warning text-white order-status">$ord->status</span></td>
+                                <td class="order-name">{{$ord->title}}</td>
+                                <td>{{$ord->type}}</td>
+                                <td>{{$ord->price}}</td>
+                                <td>{{$ord->created_at}}</td>
+                                <td><span class="bg-warning text-white order-status">{{$ord->status}}</span></td>
                                 <td class="order-action">
                                     
                                     <a href="" class="order-action-cta order-action-cta-secondary cta">Detail class</a>
                                 </td>
                             </tr>
-                            <!-- endforeach -->
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

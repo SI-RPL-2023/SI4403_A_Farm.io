@@ -21,8 +21,7 @@
                 <div class="class-container dashboard__guru-myclass">
                     @foreach ($course as $ord)
                     <div class="course__card dashboard__guru-myclass-card">
-                        <img src="{{ asset('storage/thumbnails/products/'.$ord->thumbnail) }}" alt="thumbnail"
-                            class="course__img">
+                        <img src="../asset/thumbnails/{{$ord->thumbnail}}" alt="thumbnail" class="course__img">
                         <h1>{{Str::limit($ord->title, 25)}}</h1>
                         <p>{{Str::limit($ord->description, 30)}}</p>
                         <div class="course__gutter"></div>

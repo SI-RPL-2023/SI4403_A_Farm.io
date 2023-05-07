@@ -49,6 +49,15 @@ class DatabaseSeeder extends Seeder
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
+        User::create([
+            'name' => 'pelajar',
+            'email' => 'pelajar@gmail.com',
+            'username' => 'pelajar',
+            'role' => 'pelajar',
+            'password' => bcrypt('123123123'),
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
+        ]);
         Event::create([
             'judul' => 'Pentingnya penggunaan teknologi dalam perternakan',
             'image' => '1.jpg',
