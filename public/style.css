@@ -532,10 +532,7 @@ body {
 
 .course__card {
     display: grid;
-    margin: auto;
-    grid-template-columns: 1fr;
-    grid-auto-rows: min-content;
-    grid-gap: 0.5rem;
+    margin: 20px;
     padding: 1rem 1rem;
     border-radius: 8px;
     background-color: white;
@@ -543,11 +540,12 @@ body {
 }
 
 .course__img {
-    width: 300px;
+    width: 380px;
     height: 219px;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    margin: auto;
 }
 
 .course__card h1 {
@@ -559,7 +557,7 @@ body {
 
 .course__card p {
     font-size: 1.5rem;
-    padding-bottom: 9px;
+    padding-bottom: 10px;
     font-weight: 400;
     color: #989b9e;
 }
@@ -569,6 +567,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .course__detail span {
@@ -607,6 +606,7 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     color: #989b9e;
+    margin-top: 10px;
 }
 
 .course__harga-asli {

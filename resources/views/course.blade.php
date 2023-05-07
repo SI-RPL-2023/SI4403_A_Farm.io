@@ -14,7 +14,7 @@
             </div>
             <div class="course-right">
                 <img class="position-absolute bottom-0 end-0" style=" width: 400px" src="../../../asset/titik1.png" alt="">
-                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
+                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px; z-index:-1;" src="../../../asset/Frame 1063.png" alt="">
                 <div class="col">
                     <div>
                         <img src="asset/embe.png" alt="">
@@ -72,7 +72,7 @@
                                         <h2 class="course__harga-asli">Rp{{ $crs->price }}</h2>
                                     </div>
                                     <div class="course__cardButton">
-                                        <a href="/course-checkout/{{ $crs->id }}" class="course__card-cta cta"><b>Beli Kelas</b></a>
+                                        <a href="/course-checkout/{{ $crs->id }}" class="course__card-cta cta me-2"><b>Beli Kelas</b></a>
                                         <a href="/course/{{ $crs->id }}" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a>
                                     </div>
                                 </div>

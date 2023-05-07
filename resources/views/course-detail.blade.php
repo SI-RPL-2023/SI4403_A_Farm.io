@@ -6,11 +6,11 @@
     <div class="app">
         @include('partial.navbar')
 
-        <header class="headerDetail">
+        <div class="headerDetail">
             <p class="courseDetail">Course Detail</p>
             <h3 class="titleDetail">{{ $course->title }}</h3>
             <p class="hasilDetail">{{ $course->description }}</p>
-        </header>
+        </div>
         <div class="bungkusVid d-flex flex-row justify-content-around align-items-center">
             <div class="feature-course">
                 <h1>Courses Features</h1>
@@ -51,6 +51,8 @@
             </div>
         </div>
         <div class="headerDetail">
+            <h3 class="titleDetail">{{ $course->title }}</h3>
+            <p class="hasilDetail">{{ $course->description }}</p>
             <p class="courseDetail">Related Course</p>
         </div>
         <div class="related">
