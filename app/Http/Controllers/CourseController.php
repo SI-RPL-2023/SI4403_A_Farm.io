@@ -24,6 +24,19 @@ class CourseController extends Controller
         ]);
     }
 
+    public function searchCourse()
+    {
+        $course = Course::latest();
+        if(request('search')) {
+            $course->where('title', 'like', '%' . request('search') . '%');
+        }
+
+        return view('course', [
+            'title' => 'Course',
+            'course' => $course->get()
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -89,9 +102,11 @@ class CourseController extends Controller
      * @return \Illuminate\Http\Response
      */
     
-    public function show(Course $course)
+    public function show(string $id)
     {
+        $course = Course::where('id', $id)->firstOrFail();
         return view ('course-detail', [
+            'title' => 'Course Detail',
             'course' => $course
         ]);
     }

@@ -32,6 +32,7 @@ use App\Http\Controllers\CoController;
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 
+Route::get('/logout', [LoginController::class, 'logout']);
 
 
 Route::get('/register', [RegistController::class, 'index']);
@@ -39,7 +40,8 @@ Route::post('/register', [RegistController::class, 'store']);
 
 // Route::resource('/course', CourseController::class);
 Route::get('/course', [CourseController::class, 'index']);
-Route::get('/course-detail/id', [CourseController::class, 'show']);
+Route::get('/courses', [CourseController::class, 'searchCourse']);
+Route::get('/course/{id}', [CourseController::class, 'show']);
 Route::get('/checkout', [CheckoutController::class, 'checkout1']);
 Route::get('/checkout2', [CoController::class, 'checkout2']);
 Route::get('/konfirmasi', [KonfirController::class, 'konfirmasi']);
@@ -80,7 +82,4 @@ Route::get('/user/class', [UserController::class, 'myclass']);
 Route::get('/user/setting', [UserController::class, 'setting']);
 Route::put('/user/setting/{user}', [UserController::class, 'update']);
 
-
-
-Route::post('/logout', [LoginController::class, 'logout']);
 

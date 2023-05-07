@@ -44,10 +44,10 @@
                     </div>
                 </div>
                 <div class="course__search">
-                    <form action="" method="" class="course-input-box mb-5">
-                    <img src="asset/search.png" alt="">
-                    <input type="text" class="course-input" name="search" value="" autocomplete="off"
-                        placeholder="Search course">
+                    <form action="/courses" method="" class="course-input-box mb-5">
+                        <img src="asset/search.png" alt="">
+                        <input type="text" class="course-input" name="search" value="{{ request('search') }}" autocomplete="off"
+                            placeholder="Search course">
                     </form>
                     <div class="course-content">
                         @foreach ($course as $crs)
@@ -73,7 +73,7 @@
                                     </div>
                                     <div class="course__cardButton">
                                         <a href="/course-checkout/{{ $crs->id }}" class="course__card-cta cta"><b>Beli Kelas</b></a>
-                                        <!-- <a href="/course/{{ $crs->id }}" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a> -->
+                                        <a href="/course/{{ $crs->id }}" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a>
                                     </div>
                                 </div>
                             </div>

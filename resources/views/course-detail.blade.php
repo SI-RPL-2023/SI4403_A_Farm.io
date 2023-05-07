@@ -8,8 +8,8 @@
 
         <header class="headerDetail">
             <p class="courseDetail">Course Detail</p>
-            <h3 class="titleDetail">Judul Course</h3>
-            <p class="hasilDetail">Memudahkan melihat hasil peternakan dengan menggunakan aplikasi yang terbaik di ciptakan oleh anak bangsa</p>
+            <h3 class="titleDetail">{{ $course->title }}</h3>
+            <p class="hasilDetail">{{ $course->description }}</p>
         </header>
         <div class="bungkusVid d-flex flex-row justify-content-around align-items-center">
             <div class="feature-course">
@@ -17,15 +17,15 @@
                 <div class="course-detail-feature mt-5">
                     <div>
                         <span>Skill Level</span>
-                        <span>skillnya apa</span>
+                        <span>{{ $course->skillLevel }}</span>
                     </div>
                     <div>
                         <span>Instructur</span>
-                        <span>siapa instructur</span>
+                        <span>Darto</span>
                     </div>
                     <div>
                         <span>Type</span>
-                        <span>type course</span>
+                        <span>{{ $course->type }}</span>
                     </div>
                     <div>
                         <span>Rating</span>
@@ -33,7 +33,7 @@
                     </div>
                     <div>
                         <span>Price</span>
-                        <span class="course-detail-price">Rp123123</span>
+                        <span class="course-detail-price">Rp. {{ $course->price }}</span>
                     </div>
                     @if(auth()->check() && auth()->user()->role === "gurutani" )
                     @else
@@ -45,17 +45,11 @@
                 <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
                 <div class="col rounded-5 p-5 border w-100 bg-light bg-opacity-25" style='backdrop-filter: blur(10px);'>
                     <iframe class="header__preview header__course-preview" width="863" height="500"
-                        src="https://www.youtube.com/embed/nYSDcGhYy-0">
+                        src="{{ $course->video }}">
                     </iframe>
                 </div>
             </div>
         </div>
-        
-        <div class="headerDetail">
-            <h3 class="titleDetail">Judul Course</h3>
-            <p class="hasilDetail">Description Course</p>
-        </div>
-        
         <div class="headerDetail">
             <p class="courseDetail">Related Course</p>
         </div>

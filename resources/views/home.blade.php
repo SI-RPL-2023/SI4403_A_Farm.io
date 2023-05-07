@@ -80,7 +80,7 @@
                 <div>
                 <img class="position-absolute bottom-0 end-0" style=" width: 400px" src="../../../asset/titik1.png" alt="">
                 <img class="position-absolute top-0 start-50 translate-middleç-x" style=" width: 400px" src="../../../asset/titik.svg" alt="">
-                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
+                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 100px" src="../../../asset/Frame 1063.png" alt="">
                 </div>
                 <div class="col-6">
                     <div class="row">

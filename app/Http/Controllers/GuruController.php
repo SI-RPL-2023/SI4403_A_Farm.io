@@ -120,13 +120,13 @@ class GuruController extends Controller
     //     return back()->with('loginError', 'Login gagal, gan!'); 
     // }
 
-    // public function logout(){
-    //     Auth::logout();
+    public function logout(){
+        Auth::logout();
 
-    //     request()->session()->invalidate();
-    //     request()->session()->regenerateToken();
-    //     // withOutCookie()
-    //     return redirect('/');
-    // }
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+        // withOutCookie()
+        return redirect('/');
+    }
     // login guru
 }
