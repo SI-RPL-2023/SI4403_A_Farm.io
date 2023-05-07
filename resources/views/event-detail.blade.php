@@ -106,49 +106,54 @@
                     </div>
                 </div>
             </div>
-
-            <div class="kalender mt-5 w-75">
-                    <div class="leftInfo">
-                        <img src="../asset/kalender.png" alt="kalender" srcset="">
-                    </div>
-                    <div class="rightInfo ms-5">
-                        <div class="info">
-                            <div class="moreInfo">
-                                <div class="infoImage d-flex mb-5 align-items-center">
-                                    <img src="../asset/lampu.png" class="me-5" alt="lampu">
-                                    <div class="contentInfo">
-                                        <h6 class="fs-1">Pengetahuan yang diperoleh</h6>
-                                        <p class="contentDesc fs-4">dengan adanya kelas yang di sediakan maka benefit yang didapatkan adalah pengetahuan 
-                                            yang luas tentang teknik dan strategi pertanian dan peternakan yang efektif.</p>
+            <div class="container">
+                <div>
+                    <p style="color:yellow"><b>MENGAPA BERGABUNG DENGAN KAMI ?</b></p>
+                    <h1 class="mt-5 pb-5" style="font-size: 52px">Grow together with the community</h1>
+                </div>
+                <div class="kalender mt-5">
+                        <div class="leftInfo">
+                            <img src="../asset/kalender.png" alt="kalender" srcset="">
+                        </div>
+                        <div class="rightInfo ms-5">
+                            <div class="info">
+                                <div class="moreInfo">
+                                    <div class="infoImage d-flex mb-5 align-items-center">
+                                        <img src="../asset/lampu.png" class="me-5" alt="lampu">
+                                        <div class="contentInfo">
+                                            <h6 class="fs-1">Pengetahuan yang diperoleh</h6>
+                                            <p class="contentDesc fs-4">dengan adanya kelas yang di sediakan maka benefit yang didapatkan adalah pengetahuan 
+                                                yang luas tentang teknik dan strategi pertanian dan peternakan yang efektif.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="garis"></div>
-                            <div class="moreInfo">
-                                <div class="infoImage d-flex mb-5 align-items-center">
-                                    <img src="../asset/produktifitas.png" class="me-5" alt="produktifitas">
-                                    <div class="contentInfo">
-                                        <h6 class="fs-1">Peningkatan Produktifitas</h6>
-                                        <p class="contentDesc fs-4">Pendidikan peternakan dapat membantu meningkatkan produktivitas ternak melalui penerapan teknik pemeliharaan yang benar, 
-                                        diet yang tepat, dan pengelolaan kesehatan ternak.</p>
+                                <div class="garis"></div>
+                                <div class="moreInfo">
+                                    <div class="infoImage d-flex mb-5 align-items-center">
+                                        <img src="../asset/produktifitas.png" class="me-5" alt="produktifitas">
+                                        <div class="contentInfo">
+                                            <h6 class="fs-1">Peningkatan Produktifitas</h6>
+                                            <p class="contentDesc fs-4">Pendidikan peternakan dapat membantu meningkatkan produktivitas ternak melalui penerapan teknik pemeliharaan yang benar, 
+                                            diet yang tepat, dan pengelolaan kesehatan ternak.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="garis2"></div>
-                            <div class="moreInfo">
-                                <div class="infoImage d-flex mb-5 align-items-center">
-                                    <img src="../asset/toga.png" class="me-5" alt="toga">
-                                    <div class="contentInfo">
-                                        <h6 class="fs-1">Peningkatan Pendapatan</h6>
-                                        <p class="contentDesc fs-4">Dengan pengetahuan yang diperoleh melalui pendidikan pertanian dan peternakan, individu dapat meningkatkan pendapatan mereka dengan mengoptimalkan hasil produksi, 
-                                            meningkatkan kualitas produk, dan menjual produk mereka dengan harga yang lebih tinggi.</p>
+                                <div class="garis2"></div>
+                                <div class="moreInfo">
+                                    <div class="infoImage d-flex mb-5 align-items-center">
+                                        <img src="../asset/toga.png" class="me-5" alt="toga">
+                                        <div class="contentInfo">
+                                            <h6 class="fs-1">Peningkatan Pendapatan</h6>
+                                            <p class="contentDesc fs-4">Dengan pengetahuan yang diperoleh melalui pendidikan pertanian dan peternakan, individu dapat meningkatkan pendapatan mereka dengan mengoptimalkan hasil produksi, 
+                                                meningkatkan kualitas produk, dan menjual produk mereka dengan harga yang lebih tinggi.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
+    
                 </div>
+            </div>
         </div>
         
         @include('partial.footer')
