@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/course-access.css">
     <link rel="stylesheet" href="/course-success.css">
     <link rel="stylesheet" href="/course-detail.css">
+    <link rel="stylesheet" href="/event-style.css">
     <link rel="stylesheet" href="/dashboard-user.css">
     <link rel="stylesheet" href="/dashboard-guru.css">
     <link rel="stylesheet" href="/community.css">

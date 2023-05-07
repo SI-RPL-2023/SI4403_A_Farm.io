@@ -51,6 +51,7 @@ Route::get('/konfirmasi', [KonfirController::class, 'konfirmasi']);
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/event', [EventController::class, 'displayEvent']);
+Route::get('/event-detail/1', [EventController::class, 'eventDetail']);
 Route::get('/comunity', [ComunityController::class, 'comun']);
 
 Route::get('/guruternak/login', [GuruController::class, 'loginGuru']);

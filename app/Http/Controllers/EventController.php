@@ -15,4 +15,10 @@ class EventController extends Controller
             'Event' => $Event
         ]);
     }
+
+    public function eventDetail() {
+        return view('event-detail', [
+            'title' => 'Detail'
+        ]);
+    }
 }
