@@ -68,7 +68,8 @@
                                 <div class="course__gutter"></div>
                                 <div class="course__card-transaksi d-flex justify-content-between">
                                     <div class="course__harga">
-                                        <p class="course__harga-coret">Rp125.000</p>
+                                        {{$discount= $crs->price*120/100}}
+                                        <p class="course__harga-coret">Rp{{ $discount }}</p>
                                         <h2 class="course__harga-asli">Rp{{ $crs->price }}</h2>
                                     </div>
                                     <div class="course__cardButton">
