@@ -13,6 +13,7 @@ use App\Http\Controllers\ComunityController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CoController;
 use App\Http\Controllers\BarcodeController;
+use App\Http\Controllers\SuksesController;
 
 
 
@@ -46,6 +47,7 @@ Route::get('/course/{id}', [CourseController::class, 'show']);
 Route::get('/checkout', [CheckoutController::class, 'checkout1']);
 Route::get('/checkout2', [CoController::class, 'checkout2']);
 Route::get('/konfirmasi', [KonfirController::class, 'konfirmasi']);
+Route::get('/sukses', [SuksesController::class, 'suksess']);
 Route::get('/barcode', [BarcodeController::class, 'barco']);
 
 
