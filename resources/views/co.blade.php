@@ -49,17 +49,17 @@
                 <div class="col-4">
 
                     <div class="course_card d-flex flex-column justify-content-between">
-                        <img src="../asset/hayam.png" alt="" class="course_img rounded rounded-4">
+                        <img src="../asset/thumbnails/{{$course->thumbnail}}" alt="" class="course_img rounded rounded-4">
                         <div>
-                            <h2>Monitor Hasil Peternakan Menggunakan Teknologi</h2>
-                            <p>Memudahkan melihat hasil peternakan dengan menggunakan aplikasi yang terbaik di ciptakan oleh anak bangsa</p>
+                            <h2>{{ Str::limit($course->title, 25) }}</h2>
+                            <p>{{ Str::limit($course->description, 30) }}</p>
                         </div>
                         <div class="course__card-transaksi">
                             <div class="course__gutter"></div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="course__harga">
-                                    <p class="course__harga-coret">Rp125.000</p>
-                                    <h2 class="course__harga-asli">GRATIS</h2>
+                                    <p class="course__harga-coret">Rp{{ $course->price*120/100 }}</p>
+                                    <h2 class="course__harga-asli">Rp{{ $course->price }}</h2>
                                 </div>
                                 <div class="course__cardButton">
                                     <img src="../asset/bintang.png" alt="">
@@ -99,15 +99,15 @@
                         </p>
                         <div class="d-flex justify-content-between  mt-5">
                             <p>Harga Normal</p>
-                            <p style="text-decoration: line-through; color: #6D4405">Rp 325,000</p>
+                            <p style="text-decoration: line-through; color: #6D4405">Rp{{ $course->price*120/100 }}</p>
                         </div>
                         <div class="d-flex justify-content-between mt-5">
                             <p>Harga Kelas</p>
-                            <p >Rp 200,000</p>
+                            <p >Rp{{ $course->price }}</p>
                         </div>
                         <div class="d-flex justify-content-between mt-5">
                             <p>Total Transfer</p>
-                            <p >Rp 200,000</p>
+                            <p >Rp{{ $course->price }}</p>
                         </div>
                         <p class=" fw-bold mt-5">
                             Payment details
@@ -174,9 +174,9 @@
   
         </div>
         <div class="d-flex flex-column justify-content-center align-items-center  modal-body">
-            <img src="asset/alert.png" style="width: 75px; height: 76px" alt="">
+            <img src="/asset/alert.png" style="width: 75px; height: 76px" alt="">
             <p class="text-dark fw-bold mt-5 fs-2">
-                0280256315
+                Konfirmasi Pembayaran
             </p>
             <p class="text-dark mt-5 fs-2">
                 Apakah Anda yakin  ingin melakukan transaksi ?
@@ -201,7 +201,7 @@
     
           </div>
           <div class="d-flex flex-column justify-content-center align-items-center  modal-body">
-              <img src="asset/verify.png" style="width: 75px; height: 76px" alt="">
+              <img src="/asset/verify.png" style="width: 75px; height: 76px" alt="">
               <p class="text-dark fw-bold mt-5 fs-2">
                 Tunggu Sebentar !
               </p>
@@ -209,8 +209,8 @@
                 Jika Berhasil, Anda Dialihkan ke halaman dalam waktu 3 detik...
               </p>
               <div class="mt-5">
-                  <button type="button" class="btn fs-2  me-5" data-bs-target="#konfir" data-bs-toggle="modal" style=" width:120px; height: 50px; background-color:#EBFF00">sudah</button>
-                <button type="button" class="btn btn-secondary fs-2" data-bs-dismiss="modal" style=" width:120px; height: 50px" >belum</button>
+                  <a href="/konfirmasi/{{$course->id}}" class="btn fs-2  me-5 pt-3" style=" width:120px; height: 50px; background-color:#EBFF00">sudah</a>
+              <button type="button" class="btn btn-secondary fs-2" data-bs-dismiss="modal" style=" width:120px; height: 50px" >belum</button>
               </div>
           </div>
           <div class="modal-footer">
@@ -219,6 +219,7 @@
         </div>
       </div>
   </div>
+  
     
     @include('partial.footer')
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -139,7 +139,7 @@ class CourseController extends Controller
                 // image
                 $thumbnail = explode('.', $request->file('thumbnail')->getClientOriginalName())[0];
                 $thumbnail = $thumbnail . '-' . time() . '.' . $request->file('thumbnail')->extension();
-                $request->file('thumbnail')->storeAs('public/thumbnails/products/', $thumbnail);
+                $request->thumbnail->move(public_path('asset/thumbnails'), $thumbnail);
                 Course::where('id', $course->id)
                 ->update([
                     'thumbnail' => $thumbnail
@@ -161,7 +161,7 @@ class CourseController extends Controller
                 // image
                 $thumbnail = explode('.', $request->file('thumbnail')->getClientOriginalName())[0];
                 $thumbnail = $thumbnail . '-' . time() . '.' . $request->file('thumbnail')->extension();
-                $request->file('thumbnail')->storeAs('public/thumbnails/products/', $thumbnail);
+                $request->thumbnail->move(public_path('asset/thumbnails'), $thumbnail);
                 Course::where('id', $course->id)
                 ->update([
                     'thumbnail' => $thumbnail
@@ -228,31 +228,29 @@ class CourseController extends Controller
      * @param  \App\Models\Course  $course
      * @return \Illuminate\Http\Response
      */
-    public function PaymentMethod(Request $request)
+    public function Pembayaran(Request $request)
     {
         // evidence
         $evidence = explode('.', $request->file('evidence')->getClientOriginalName())[0];
         $evidence = $evidence . '-' . time() . '.' . $request->file('evidence')->extension();
-        $request->file('evidence')->storeAs('public/evidences/products/', $evidence);
+        $request->evidence->move(public_path('asset/evidences'), $evidence);
 
         // ktp
-        $ktp = explode('.', $request->file('ktp')->getClientOriginalName())[0];
-        $ktp = $ktp . '-' . time() . '.' . $request->file('ktp')->extension();
-        $request->file('ktp')->storeAs('public/ktps/products/', $ktp);
-
-
-        if($request->ktp != null && $request->evidence != null) {
+        // $ktp = explode('.', $request->file('ktp')->getClientOriginalName())[0];
+        // $ktp = $ktp . '-' . time() . '.' . $request->file('ktp')->extension();
+        // $request->file('ktp')->storeAs('public/ktps/products/', $ktp);
+        if($request->username != null && $request->evidence != null) {
             Order::create([
-                'guruTernak_id' => $request->guruTani_id,
-                'course_id'=> $request->course_id,
                 'user_id'=> auth()->user()->id,
+                'course_id'=> $request->course_id,
+                'guruTernak_id' => $request->guruTernak_id,
+                'username'=> $request->username,
                 'cover'=> $request->cover,
-                'ktp'=> $ktp,
                 'title'=> $request->title,
-                'status'=> 'pending',
+                'status'=> $request->status,
                 'type'=> $request->type,
                 'price'=> $request->price,
-                'evidence' => $evidence,
+                'evidence' => $evidence
             ]);
         }
         return redirect('/user/order');
@@ -309,7 +307,7 @@ class CourseController extends Controller
     {
         $order = Order::where('user_id', auth()->user()->id)->first();
         return view('course-access', [
-            'title' => 'Pentingnya Penggunaan Teknologi Pertanian',
+            'title' => 'Pentingnya Penggunaan Teknologi PerTernakan',
             'order' => $order
         ]);
     }

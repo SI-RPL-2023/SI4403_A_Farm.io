@@ -12,7 +12,7 @@ class Order extends Model
     protected $table = "orders";
 
     protected $fillable =[
-        'id','user_id','guruternak_id', 'course_id','ktp', 'status','evidence','cover','title','price','type','created_at'
+        'id','user_id','guruTernak_id', 'course_id', 'username','status','evidence','cover','title','price','type','created_at'
     ];
 
 
@@ -25,7 +25,7 @@ class Order extends Model
         return $this->belongsTo('App\Models\User');
     }
     public function guru () {
-        return $this->belongsTo(Guru::class, 'guruternak_id', 'id');
+        return $this->belongsTo(Guru::class, 'guruTernak_id', 'id');
     }
     public function course () {
         return $this->hasOne(Course::class, 'id', 'course_id');

@@ -73,7 +73,7 @@
                                         <h2 class="course__harga-asli">Rp{{ $crs->price }}</h2>
                                     </div>
                                     <div class="course__cardButton">
-                                        <a href="/course-checkout/{{ $crs->id }}" class="course__card-cta cta me-2"><b>Beli Kelas</b></a>
+                                        <a href="/checkout/{{ $crs->id }}" class="course__card-cta cta me-2"><b>Beli Kelas</b></a>
                                         <a href="/course/{{ $crs->id }}" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a>
                                     </div>
                                 </div>

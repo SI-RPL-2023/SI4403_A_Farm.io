@@ -44,14 +44,17 @@ Route::post('/register', [RegistController::class, 'store']);
 Route::get('/course', [CourseController::class, 'index']);
 Route::get('/courses', [CourseController::class, 'searchCourse']);
 Route::get('/course/{id}', [CourseController::class, 'show']);
-Route::get('/checkout', [CheckoutController::class, 'checkout1']);
-Route::get('/checkout2', [CoController::class, 'checkout2']);
-Route::get('/konfirmasi', [KonfirController::class, 'konfirmasi']);
+// Route::get('/checkout', [CheckoutController::class, 'checkout1']);
+// Route::get('/checkout2', [CoController::class, 'checkout2']);
+// Route::get('/konfirmasi', [KonfirController::class, 'konfirmasi']);
 Route::get('/sukses', [SuksesController::class, 'suksess']);
 Route::get('/barcode', [BarcodeController::class, 'barco']);
 
 
-
+// Route::get('/checkout', [CheckoutController::class, 'checkout1']);
+Route::get('/checkout/{id}', [CoController::class, 'checkout']);
+Route::get('/konfirmasi/{id}', [KonfirController::class, 'konfirmasi'])->name('konfirmasi');
+Route::post('/konfirmasi/{id}', [CourseController::class, 'Pembayaran'])->name('pembayaran');
 
 Route::get('/', [HomeController::class, 'index']);
 

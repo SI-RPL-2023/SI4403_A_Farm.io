@@ -18,17 +18,17 @@
                 <div class="col-4">
 
                     <div class="course_card d-flex flex-column justify-content-between">
-                        <img src="../asset/hayam.png" alt="" class="course_img rounded rounded-4">
+                        <img src="../asset/thumbnails/{{$course->thumbnail}}" alt="" class="course_img rounded rounded-4">
                         <div>
-                            <h2>Monitor Hasil Peternakan Menggunakan Teknologi</h2>
-                            <p>Memudahkan melihat hasil peternakan dengan menggunakan aplikasi yang terbaik di ciptakan oleh anak bangsa</p>
+                            <h2>{{ Str::limit($course->title, 25) }}</h2>
+                            <p>{{ Str::limit($course->description, 30) }}</p>
                         </div>
                         <div class="course__card-transaksi">
                             <div class="course__gutter"></div>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="course__harga">
-                                    <p class="course__harga-coret">Rp125.000</p>
-                                    <h2 class="course__harga-asli">GRATIS</h2>
+                                    <p class="course__harga-coret">Rp{{ $course->price*120/100 }}</p>
+                                    <h2 class="course__harga-asli">Rp{{ $course->price }}</h2>
                                 </div>
                                 <div class="course__cardButton">
                                     <img src="../asset/bintang.png" alt="">
@@ -46,15 +46,24 @@
                     <h2 class=" fw-bold mt-5">
                         Payment details
                     </h2>
-                    <form class="align-items-center" method="post" enctype="multipart/form-data" action="uploadproses.php">
+                    <form action="/konfirmasi/{{ $course->id }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <input type="hidden" value="{{ $course->guruTernak_id }}" name="guruTernak_id">
+                    <input type="hidden" value="{{ $course->id }}" name="course_id">
+                    <input type="hidden" value="{{ $course->thumbnail }}" name="cover">
+                    <input type="hidden" value="{{ $course->title }}" name="title">
+                    <input type="hidden" value="Pending" name="status">
+                    <input type="hidden" value="{{ $course->type }}" name="type">
+                    <input type="hidden" value="{{ $course->price }}" name="price">
+
                         <h4 class="mt-5" >
                             Evidence of transfer
                         </h4>
-                        <Input class="mt-5 border rounded rounded-4" type="file" name="gambar">
+                        <Input class="mt-5 border rounded rounded-4" type="file" name="evidence">
                         <h4 class="mt-5" >
                             Evidence of transfer
-                        </h4>
-                        <input class="border rounded rounded-4" type="text" placeholder="Type your username...">
+                        </h4>   
+                        <input class="border rounded rounded-4" type="text" name="username" placeholder="Type your username...">
                         <input class="mt-5 fw-bold fw-2 rounded" style="font-size:24px; background-color:#EBFF00"  type="submit" value="Pay now">
                     </form>
                     

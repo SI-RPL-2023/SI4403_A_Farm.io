@@ -37,12 +37,12 @@
                     </div>
                     @if(auth()->check() && auth()->user()->role === "gurutani" )
                     @else
-                    <a href="/course-checkout/id" class="course-detail-cta cta w-50 mx-auto">Enroll Now</a>
+                    <a href="/checkout/{{$course->id}}" class="course-detail-cta cta w-50 mx-auto">Enroll Now</a>
                     @endif
                 </div>
             </div>
             <div class="video">
-                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
+                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px;z-index: -999;" src="../../../asset/Frame 1063.png" alt="">
                 <div class="col rounded-5 p-5 border w-100 bg-light bg-opacity-25" style='backdrop-filter: blur(10px);'>
                     <iframe class="header__preview header__course-preview" width="863" height="500"
                         src="{{ $course->video }}">
