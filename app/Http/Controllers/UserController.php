@@ -82,4 +82,11 @@ class UserController extends Controller
 
         return redirect("/user/setting");
     }
+
+    public function accessVideoTesting()
+    {
+        return view('user/user-video', [
+            'title' => 'Course Checkout Successful'
+        ]);
+    }
 }

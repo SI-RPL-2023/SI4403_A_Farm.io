@@ -55,52 +55,38 @@
             <p class="hasilDetail">{{ $course->description }}</p>
             <p class="courseDetail">Related Course</p>
         </div>
+        
         <div class="related">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="course__card">
-                            <img src="../asset/testing1.png" alt="" class="course__img">
-                            <h1>Pentingnya Penggunaan Teknolgi peternakan</h1>
-                            <p>Menambahan wawasan mengenai pentingnya menggunakan teknologi pada peternakan</p>
-                            <div class="course__detail">
-                                <span>
-                                    <img src="asset/book.svg" alt="">
-                                    13 Materi
-                                </span>
-                                <span>
-                                    <img src="asset/bookmark.svg" alt="">
-                                    Fundamental
-                                </span>
-                            </div>
-                            <div class="course__gutter"></div>
+            <div class="course-content">
+                        
+                            <div class="course__card">
+                                <img src="../../../asset/embe.png" alt="image" class="course__img">
+                                <h1>title bang</h1>
+                                <p>iya bang</p>
+                                <div class="course__detail">
+                                    <span>
+                                        <img src="asset/book.svg" alt="">
+                                        13 Materi
+                                    </span>
+                                    <span>
+                                        <img src="asset/bookmark.svg" alt="">
+                                        Fundamental
+                                    </span>
+                                </div>
+                                <div class="course__gutter"></div>
                                 <div class="course__card-transaksi d-flex justify-content-between">
                                     <div class="course__harga">
-                                        <p class="course__harga-coret">Rp125.000</p>
-                                        <h2 class="course__harga-asli">GRATIS</h2>
+                                        <p class="course__harga-coret">Rp123123</p>
+                                        <h2 class="course__harga-asli">Rp123123</h2>
                                     </div>
                                     <div class="course__cardButton">
-                                        <a href="" class="course__card-cta cta"><b>Beli Kelas</b></a>
+                                        <a href="" class="course__card-cta cta me-2"><b>Beli Kelas</b></a>
+                                        <a href="" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
+                        
                     </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
         </div>
     </div>
 

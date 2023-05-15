@@ -10,7 +10,10 @@
 
             <div class="class-box dashboard-box">
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E; ">Kelas Saya</h1>
-                <p>Kelas yang tersedia</p>
+                <div class="titleVideo d-flex align-items-center">
+                    <p>Kelas yang tersedia</p>
+                    <img src="../../../asset/coin.png" alt="" class="ms-4">
+                </div>
                 <div class="class-subtle dashboard-subtle">
                     <img src="../asset/edit.svg" alt="">
                     Kelas Saya

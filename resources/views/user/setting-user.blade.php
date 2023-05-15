@@ -10,9 +10,12 @@
             
             <div class="setting-box dashboard-box">
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E; ">Setting</h1>
-                <p>Enter valid information to make the learning process easier</p>
+                <div class="titleVideo d-flex align-items-center">
+                    <p>Enter valid information to make the learning process easier</p>
+                    <img src="../../../asset/security.png" alt="" class="ms-4">
+                </div>
+                
                 <div class="class-subtle dashboard-subtle">
-                    <img src="../asset/edit.svg" alt="">
                     Kelas Saya
                 </div>
                 <form action="/user/setting/{{auth()->user()->id}} " class="dashboard-form">

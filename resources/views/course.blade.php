@@ -57,7 +57,7 @@
                                 <p>{{ Str::limit($crs->description, 30) }}</p>
                                 <div class="course__detail">
                                     <span>
-                                        <img src="asset/book.svg" alt="">
+                                        <img src="../../asset/book.svg" alt="">
                                         13 Materi
                                     </span>
                                     <span>
