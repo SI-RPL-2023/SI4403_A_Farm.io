@@ -24,7 +24,7 @@
                     @if($ord->status == "Verified")
 
                     <div class="class-card">
-                        <img src="../asset/thumbnails/{{$ord->thumbnail}}" alt="">
+                        <img src="../asset/thumbnails/{{$ord->cover}}" alt="">
                         <h1>{{$ord->title}}</h1>
                         <p>{{$ord->created_at}}</p>
                         <a href="/course-video" class="class-cta cta">Start Learn</a>

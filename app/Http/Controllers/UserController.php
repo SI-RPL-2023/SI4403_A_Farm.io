@@ -26,7 +26,7 @@ class UserController extends Controller
         ]);
     }
     public function myclass(){
-        $order = Order::where('id', auth()->user()->id)->get();
+        $order = Order::where('user_id', auth()->user()->id)->get();
         return view('user/user-myclass', [
             'title' => 'Class User',
             'order'=>$order
@@ -36,7 +36,7 @@ class UserController extends Controller
     }
 
     public function myorder(){
-        $ord = Order::where('id', auth()->user()->id)->get(); 
+        $ord = Order::where('user_id', auth()->user()->id)->get(); 
         return view('user/user-myorder', [
             'title' => 'Order User',
             'order' => $ord

@@ -55,33 +55,32 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($order as $ord)
                             <tr>
-                                <td>1</td>
+                                <td>{{$ord->id}}</td>
+                                <td><img src="../asset/thumbnails/{{$ord->cover}}" class="order-cover"
+                                        alt=""></td>
+                                <td>{{$ord->title}}</td>
                                 <td>
-                                <a href="../asset/bukti-tf.jpg" target="_blank">
-                                    <img src="../asset/bukti-tf.jpg" alt="" class="inbox-img">
-                                </a>
+                                    <a href="" class="inbox-idclass">{{$ord->type}}</a>
                                 </td>
-                                <td>3</td>
-                                <td>
-                                    <a href="" class="inbox-idclass">a10</a>
-                                </td>
-                                <td>Rp123123</td>
-                                <td>tanggal</td>
-                                <td><span class="bg-warning text-white order-status">Status</span></td>
+                                <td>{{$ord->price}}</td>
+                                <td>{{$ord->created_at}}</td>
+                                <td><span class="bg-warning text-white order-status">{{$ord->status}}</span></td>
                                 <td class="order-action">
-                                    <form action="/gurutani/inbox/parameter" method="post">
+                                    <form action="/guruternak/inbox/{{$ord->id}}" method="post">
                                         @csrf
                                         @method('put')
                                         <button class="inbox-invoice cta bg-succes" name="Verified" type="submit">Confirm</button>
                                     </form>
-                                    <form action="/gurutani/inbox/parameter" method="post">
+                                    <form action="/guruternak/inbox/{{$ord->id}}" method="post">
                                         @csrf
                                         @method('put')
                                         <button class="inbox-invoice cta bg-danger" name="Rejected" type="submit">Rejected</button>
                                     </form>
                                 </td>
                             </tr>
+                            @endforeach
     
                             <!-- <tr>
                                 <td>2</td>

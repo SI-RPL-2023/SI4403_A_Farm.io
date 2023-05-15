@@ -11,9 +11,10 @@ use Illuminate\Support\Facades\Auth;
 class GuruController extends Controller
 {
     public function myinbox(){
+        $order = Order::where('guruTernak_id', auth()->user()->id)->get();
         return view('guru/guru-myinbox-polosan', [
             'title' => 'My Inbox Order',
-            'order'=> "test"
+            'order'=> $order
         ]);
     }
 
@@ -89,13 +90,13 @@ class GuruController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    // public function update_status(Request $request, Order $order){
-    //     $order->update([
-    //         'status' => 'Verified'
-    //     ]);
-    //     $request->session()->flash('success', 'data berhasil diubah gan');
-    //     return redirect("/gurutani/inbox");
-    // }
+    public function update_status(Request $request, Order $order){
+        $order->update([
+            'status' => 'Verified'
+        ]);
+        $request->session()->flash('success', 'data berhasil diubah gan');
+        return redirect("/guruternak/inbox");
+    }
 
     // public function update_status2(Request $request, Order $order){
     //     $order->update([

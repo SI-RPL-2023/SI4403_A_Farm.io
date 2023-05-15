@@ -253,7 +253,7 @@ class CourseController extends Controller
                 'evidence' => $evidence
             ]);
         }
-        return redirect('/user/order');
+        return redirect('/sukses');
 
     }
     /**

@@ -63,7 +63,7 @@
                         <h4 class="mt-5" >
                             Evidence of transfer
                         </h4>   
-                        <input class="border rounded rounded-4" type="text" name="username" placeholder="Type your username...">
+                        <input class="border rounded rounded-4" type="text" name="username" value="{{auth()->user()->username}}" placeholder="Type your username...">
                         <input class="mt-5 fw-bold fw-2 rounded" style="font-size:24px; background-color:#EBFF00"  type="submit" value="Pay now">
                     </form>
                     

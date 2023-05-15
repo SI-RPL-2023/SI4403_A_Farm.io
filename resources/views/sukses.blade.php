@@ -11,8 +11,8 @@
             <h1 class="text-white">Successful Checkout</h1>
             <p class="text-center">WhatsApp will open automatically for continue the 
                 <br> payment confirmation process</p>
-            <a href="" class="cta">Selesai</a>
-            <a href="" class="cta checkout-success-cta-back">Butuh Bantuan</a>
+            <a href="/user/order" class="cta">Selesai</a>
+            <a href="" style="background-color: white;" class="cta checkout-success-cta-back">Butuh Bantuan</a>
         </section>
 
         @include('partial.footer')
