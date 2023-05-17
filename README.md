@@ -67,6 +67,7 @@ php artisan key:generate
 
 ```bash
 php artisan migrate
+php artisan migrate:fresh --seed
 ```
 
 - Link Storage
@@ -80,15 +81,4 @@ php artisan storage:link
 ```bash
 php artisan serve
 ```
-## Diagram ERD 
-
-![WhatsApp Image 2023-03-30 at 16 21 48](https://user-images.githubusercontent.com/100100825/228791303-55dd10f8-89c2-4e6f-935d-45bb8a5aacd8.jpeg)
-
-## Class Diagram 
-
-![WhatsApp Image 2023-03-30 at 16 22 16](https://user-images.githubusercontent.com/100100825/228792497-864c78c5-525a-41dd-b72a-087429c1f9b3.jpeg)
-
-## Usecase Diagram
-
-![WhatsApp Image 2023-03-30 at 16 28 09](https://user-images.githubusercontent.com/100100825/228813937-be0897cb-cd77-48ce-b743-91f04ee7a782.jpeg)
 
