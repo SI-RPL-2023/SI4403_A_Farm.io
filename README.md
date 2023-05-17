@@ -67,6 +67,7 @@ php artisan key:generate
 
 ```bash
 php artisan migrate
+php artisan migrate:fresh --seed
 ```
 
 - Link Storage
