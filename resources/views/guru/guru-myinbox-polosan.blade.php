@@ -20,25 +20,31 @@
                             <img src="../asset/tasReport.png" alt="logo">
                             <h2>Total Order</h2>
                         </div>
-                        <h1>263K</h1>
+                        <h1>{{ $order->count() }}</h1>
                     </div>
                     <div class="reportData">
                         <div class="headData">
                             <img src="../asset/orangReport.png" alt="logo">
-                            <h2>Total Order</h2>
+                            <h2>Total User</h2>
                         </div>
-                        <h1>263K</h1>
+                        <h1>{{ $user->count() }}</h1>
                     </div>
                     <div class="reportData">
                         <div class="headData">
                             <img src="../asset/ceklistReport.png" alt="logo">
-                            <h2>Total Order</h2>
+                            <h2>Total Pendapatan</h2>
                         </div>
-                        <h1>263K</h1>
+                        @php $total=0 @endphp
+                        @foreach ($order as $ord)
+                        @php
+                        $ord->status === 'Verified' ? $total += $ord->price : $total +=0
+                        @endphp
+                        @endforeach
+                        <h1>{{$total}}</h1>
                     </div>
                 </div>
                 <div class="class-subtle dashboard-subtle">
-                        Order Status
+                    Order Status
                 </div>
                 <div class="tableOrder">
                     <table class="order-table mx-auto">
@@ -58,8 +64,7 @@
                             @foreach ($order as $ord)
                             <tr>
                                 <td>{{$ord->id}}</td>
-                                <td><img src="../asset/thumbnails/{{$ord->cover}}" class="order-cover"
-                                        alt=""></td>
+                                <td><img src="../asset/thumbnails/{{$ord->cover}}" class="order-cover" alt=""></td>
                                 <td>{{$ord->title}}</td>
                                 <td>
                                     <a href="" class="inbox-idclass">{{$ord->type}}</a>
@@ -81,7 +86,7 @@
                                 </td>
                             </tr>
                             @endforeach
-    
+
                             <!-- <tr>
                                 <td>2</td>
                                 <td><a href="" class="inbox-idclass">b20</a></td>

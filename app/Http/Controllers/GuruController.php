@@ -12,9 +12,12 @@ class GuruController extends Controller
 {
     public function myinbox(){
         $order = Order::where('guruTernak_id', auth()->user()->id)->get();
+        $user = User::all();
         return view('guru/guru-myinbox-polosan', [
             'title' => 'My Inbox Order',
-            'order'=> $order
+            'order'=> $order,
+            'user'=> $user
+            
         ]);
     }
 
