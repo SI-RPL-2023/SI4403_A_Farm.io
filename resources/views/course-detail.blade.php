@@ -21,7 +21,7 @@
                     </div>
                     <div>
                         <span>Instructur</span>
-                        <span>Darto</span>
+                        <span>{{ $username }}</span>
                     </div>
                     <div>
                         <span>Type</span>

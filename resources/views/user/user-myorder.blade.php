@@ -43,9 +43,8 @@
                                 <td>{{$ord->price}}</td>
                                 <td>{{$ord->created_at}}</td>
                                 <td><span class="bg-warning text-white order-status">{{$ord->status}}</span></td>
-                                <td class="order-action">
-                                    
-                                    <a href="" class="order-action-cta order-action-cta-secondary cta">Detail class</a>
+                                <td>                                    
+                                    <a href="/user/class" class="order-action-cta order-action-cta-secondary cta">Detail class</a>
                                 </td>
                             </tr>
                             @endforeach

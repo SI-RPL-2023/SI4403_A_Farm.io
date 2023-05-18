@@ -88,7 +88,7 @@ Route::get('/user/order', [UserController::class, 'myorder']);
 
 Route::get('/user/class', [UserController::class, 'myclass']);
 
-Route::get('/user/class/id', [UserController::class, 'accessVideoTesting']);
+Route::get('/user/class/{id}', [UserController::class, 'accessVideoTesting']);
 
 Route::get('/user/setting', [UserController::class, 'setting']);
 Route::get('/user/setting/{user}', [UserController::class, 'update']);

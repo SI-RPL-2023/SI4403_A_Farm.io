@@ -35,7 +35,7 @@ class Course extends Model
         return $this->belongsTo('App\Models\User');
     }
     public function guruternak() {
-        return $this->belongsTo(Guruternak::class, 'guruTernak_id', 'id');
+        return $this->belongsTo(Guru::class, 'guruTernak_id', 'id');
     }
     public function order () {
         return $this->belongsTo(Order::class, 'id', 'course_id');

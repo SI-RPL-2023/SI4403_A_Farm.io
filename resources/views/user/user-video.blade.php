@@ -11,7 +11,7 @@
             <div class="class-box dashboard-box">
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E; ">Mulai Belajar</h1>
                 <div class="titleVideo d-flex align-items-center">
-                    <p>Judul Videonya apa yagesya</p>
+                    <p>{{$course->title}}</p>
                     <img src="../../../asset/book.png" alt="" class="ms-4">
                 </div>
                 <div class="class-subtle dashboard-subtle">
@@ -39,18 +39,18 @@
                             <div class="course-content mb-5">
                                 
                                     <div class="course__card p-5">
-                                        <img src="../../../asset/embe.png" alt="image" class="course__img align-items-center">
-                                        <h1 class="my-3">Judul Kelas yg User punya kalau kepanjangan kasih limit aja</h1>
+                                    <img src="{{isset($courseother) ? '../../../asset/thumbnails/'.$courseother->cover : '../../../asset/3q2rJvGWV5W4AzF7ydhEj4-1200-80.jpg'}}" alt="image" class="course__img align-items-center">
+                                        <h1 class="my-3">{{isset($courseother) ? $courseother->title : 'no class'}}</h1>
                                         <div class="aksesSelamanya d-flex align-items-center">
                                             <img src="../../../asset/success.png" alt="" class="me-3">
-                                            <p style="font-size: 20px;">Akses Selamanya</p>
+                                            <p style="font-size: 20px;">{{isset($courseother) ? 'Premium' : ''}}</p>
                                         </div>
                                     </div>
                             </div>
                         </div>
                     </div>
                     <div class="video-right w-100">
-                        <iframe class="w-100 " style="border-radius: 10px;;"height="439" src="https://www.youtube.com/embed/nbXjnumdKwg" 
+                        <iframe class="w-100 " style="border-radius: 10px;;"height="439" src="{{$course->video}}" 
                             title="YouTube video player" frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowfullscreen style="background-color: #fff">

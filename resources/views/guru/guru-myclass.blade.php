@@ -27,7 +27,7 @@
                         <div class="course__gutter"></div>
                         <div class="course__card-transaksi dashboard__guru-transaksi">
                             <div class="course__harga">
-                                <span class="course__harga-coret">Rp100000</span>
+                                <span class="course__harga-coret">{{$ord->price*120/100}}</span>
                                 <h2 class="course__harga-asli">Rp{{$ord->price}}</h2>
                             </div>
                             <a href="/guruternak/editclass/{{ $ord->id }}" class="course__card-cta cta">Edit</a>

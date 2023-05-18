@@ -92,7 +92,7 @@ class GuruController extends Controller
 
     public function update_status(Request $request, Order $order){
         $order->update([
-            'status' => 'Verified'
+            'status' => $request->status
         ]);
         $request->session()->flash('success', 'data berhasil diubah gan');
         return redirect("/guruternak/inbox");

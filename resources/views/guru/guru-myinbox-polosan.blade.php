@@ -67,16 +67,16 @@
                                 <td>{{$ord->price}}</td>
                                 <td>{{$ord->created_at}}</td>
                                 <td><span class="bg-warning text-white order-status">{{$ord->status}}</span></td>
-                                <td class="order-action">
+                                <td>
                                     <form action="/guruternak/inbox/{{$ord->id}}" method="post">
                                         @csrf
                                         @method('put')
-                                        <button class="inbox-invoice cta bg-succes" name="Verified" type="submit">Confirm</button>
+                                        <button class="inbox-invoice cta bg-succes" name="status" value="Verified" type="submit">Confirm</button>
                                     </form>
-                                    <form action="/guruternak/inbox/{{$ord->id}}" method="post">
+                                    <form action="/guruternak/inbox/{{$ord->id}}" class="mt-3" method="post">
                                         @csrf
                                         @method('put')
-                                        <button class="inbox-invoice cta bg-danger" name="Rejected" type="submit">Rejected</button>
+                                        <button class="inbox-invoice cta bg-danger" name="status" value="Rejected" type="submit">Rejected</button>
                                     </form>
                                 </td>
                             </tr>

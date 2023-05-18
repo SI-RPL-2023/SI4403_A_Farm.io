@@ -27,7 +27,7 @@
                         <img src="../asset/thumbnails/{{$ord->cover}}" alt="">
                         <h1>{{$ord->title}}</h1>
                         <p>{{$ord->created_at}}</p>
-                        <a href="/course-video" class="class-cta cta">Start Learn</a>
+                        <a href="/user/class/{{$ord->course_id}}" class="class-cta cta">Start Learn</a>
                     </div>
                     @endif
                     @endforeach

@@ -93,7 +93,7 @@ class CourseController extends Controller
             ]);
         }
         
-        return redirect('/guruternak/addclass');
+        return redirect('/guruternak/myclass');
     }
 
     /**
@@ -105,10 +105,13 @@ class CourseController extends Controller
     
     public function show(string $id)
     {
-        $course = Course::where('id', $id)->firstOrFail();
+        $course = Course::with('guruternak')->where('id', $id)->firstOrFail();
+        $username = $course->guruternak->username;
         return view ('course-detail', [
             'title' => 'Course Detail',
-            'course' => $course
+            'course' => $course,
+            'username' => $username
+
         ]);
     }
 
