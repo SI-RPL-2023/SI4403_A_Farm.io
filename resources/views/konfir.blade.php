@@ -59,7 +59,8 @@
                         <h4 class="mt-5" >
                             Evidence of transfer
                         </h4>
-                        <Input class="mt-5 border rounded rounded-4" type="file" name="evidence">
+                        <img class="img-preview img-fluid mb-3 col-md-5">
+                        <Input class="mt-5 border rounded rounded-4" type="file" id="evidence" name="evidence" onchange="previewImage()">
                         <h4 class="mt-5" >
                             Evidence of transfer
                         </h4>   
@@ -79,7 +80,19 @@
 
         </div>
        
-
+    <script>
+        // for preview image
+    function previewImage() {
+        const image = document.querySelector("#evidence");
+        const imgPreview = document.querySelector('.img-preview');
+        imgPreview.style.display = 'block';
+        const oFReader = new FileReader();
+        oFReader.readAsDataURL(image.files[0]);
+        oFReader.onload = function(oFREvent) {
+            imgPreview.src = oFREvent.target.result;
+        }
+    }
+    </script>
     
  
 </body>

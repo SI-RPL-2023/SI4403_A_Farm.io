@@ -23,8 +23,8 @@
                     @foreach ($order as $ord)
                     @if($ord->status == "Verified")
 
-                    <div class="class-card">
-                        <img src="../asset/thumbnails/{{$ord->cover}}" alt="">
+                    <div class="course__card">
+                        <img src="../asset/thumbnails/{{$ord->cover}}" alt="" class="course__img">
                         <h1>{{$ord->title}}</h1>
                         <p>{{$ord->created_at}}</p>
                         <a href="/user/class/{{$ord->course_id}}" class="class-cta cta">Start Learn</a>

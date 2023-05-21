@@ -35,7 +35,7 @@
                     </div>
                     <div class="addclass-input-grup dashboard-input-grup">
                         <label for="description">Course Description</label>
-                        <textarea name="description" class="" id="description" cols="30" rows="10"></textarea>
+                        <textarea name="description" class="" id="description" cols="30" rows="10" maxlength="100"></textarea>
                         <!-- <input type="text" name="description" id="description" value=""
                             placeholder="Enter course description" required> -->
                     </div>

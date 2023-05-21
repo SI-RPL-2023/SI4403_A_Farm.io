@@ -7,7 +7,7 @@
         <a href="/course" class="nav__link">Courses</a>
 
         @auth
-        <img src="../../asset/fotoAkun.png" alt="foto akun" style="margin-right: -30px;">
+        <img src="../../asset/fotoAkun.png" alt="foto akun" style="margin-right: -20px;">
         @if(auth()->check() && auth()->user()->role === "guru" )
         
         <div class="dropdown" id="">
