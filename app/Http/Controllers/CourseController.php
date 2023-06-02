@@ -106,13 +106,23 @@ class CourseController extends Controller
     public function show(string $id)
     {
         $course = Course::with('guruternak')->where('id', $id)->firstOrFail();
+        $courseother = Course::where('id', '!=', $id)->first();
         $username = $course->guruternak->username;
+        if ($courseother) {
+        return view ('course-detail', [
+            'title' => 'Course Detail',
+            'course' => $course,
+            'username' => $username,
+            'courseother' => $courseother
+        ]);
+    }else{
         return view ('course-detail', [
             'title' => 'Course Detail',
             'course' => $course,
             'username' => $username
 
         ]);
+    }
     }
 
     

@@ -3,6 +3,12 @@
 @include('partial.header')
 
 <body>
+
+<style>
+    #hide{
+        display: none !important;
+    }
+</style>
     <div class="app">
         @include('partial.navbar')
 
@@ -60,28 +66,29 @@
             <div class="course-content">
                         
                             <div class="course__card">
-                                <img src="../../../asset/embe.png" alt="image" class="course__img">
-                                <h1>title bang</h1>
-                                <p>iya bang</p>
+                                <img src="{{isset($courseother) ? '../../../asset/thumbnails/'.$courseother->thumbnail : '../../../asset/3q2rJvGWV5W4AzF7ydhEj4-1200-80.jpg'}}" alt="image" class="course__img">
+                                <h1>{{isset($courseother) ? $courseother->title : 'no course'}}</h1>
+                                <p>{{ Str::limit(isset($courseother) ? $courseother->description : '',25)}}</p>
                                 <div class="course__detail">
                                     <span>
                                         <img src="asset/book.svg" alt="">
-                                        13 Materi
+                                        {{isset($courseother) ? '13 Materi' : ''}}
                                     </span>
                                     <span>
                                         <img src="asset/bookmark.svg" alt="">
-                                        Fundamental
+                                        {{isset($courseother) ? $courseother->skillLevel : ''}}
                                     </span>
                                 </div>
                                 <div class="course__gutter"></div>
                                 <div class="course__card-transaksi d-flex justify-content-between">
                                     <div class="course__harga">
-                                        <p class="course__harga-coret">Rp123123</p>
-                                        <h2 class="course__harga-asli">Rp123123</h2>
+                                    {{isset($courseother) ? $discount= $courseother->price*120/100 : ''}}
+                                        <p class="course__harga-coret">{{isset($courseother) ?'Rp'. $discount : ''}}</p>
+                                        <h2 class="course__harga-asli">{{isset($courseother) ?'Rp'. $courseother->price : ''}}</h2>
                                     </div>
                                     <div class="course__cardButton">
-                                        <a href="" class="course__card-cta cta me-2"><b>Beli Kelas</b></a>
-                                        <a href="" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a>
+                                        <a href="{{ isset($courseother) ? '/checkout/'.$courseother->id : '' }}" id="{{isset($courseother) ? '' : 'hide'}}" class="course__card-cta cta me-2"><b>Beli Kelas</b></a>
+                                        <a href="{{ isset($courseother) ? '/course/'.$courseother->id : '' }}" id="{{isset($courseother) ? '' : 'hide'}}" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a>
                                     </div>
                                 </div>
                             </div>
