@@ -33,8 +33,8 @@ abstract class DuskTestCase extends BaseTestCase
             $this->shouldStartMaximized() ? '--start-maximized' : '--window-size=1920,1080',
         ])->unless($this->hasHeadlessDisabled(), function (Collection $items) {
             return $items->merge([
-                '--disable-gpu',
-                '--headless=new',
+                // '--disable-gpu',
+                // '--headless=new',
             ]);
         })->all());
 
@@ -63,4 +63,10 @@ abstract class DuskTestCase extends BaseTestCase
         return isset($_SERVER['DUSK_START_MAXIMIZED']) ||
                isset($_ENV['DUSK_START_MAXIMIZED']);
     }
+
+    protected function baseUrl()
+    {
+        return 'http://localhost:8000';
+    }
+
 }

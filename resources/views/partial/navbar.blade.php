@@ -56,7 +56,7 @@
         @endif
         @else
         <a href="/guruternak/login" class="nav__link nav-redirect">Login sebagai  Guru Ternak</a>
-        <a href="/login" class="nav__link nav-btn">Login</a>
+        <a href="/login" class="nav__link nav-btn" id="loginBTN">Login</a>
         @endauth
 
     </div>
