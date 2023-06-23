@@ -56,3 +56,37 @@
 .dahsboard__guru-delete:hover {
     color: #000;
 }
+
+
+.report{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report .reportData{
+    background-color: white;
+    margin-right: 30px;
+    padding: 50px 100px;
+    border-radius: 20px;
+}
+
+.report .reportData .headData{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.report .reportData .headData h2{
+    font-size: 25px;
+    color: grey;
+}
+.report .reportData .headData img{
+    margin-right: 20px;    
+}
+
+.report .reportData h1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 62px;
+    font-weight: bold;
+}

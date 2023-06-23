@@ -11,9 +11,13 @@ use Illuminate\Support\Facades\Auth;
 class GuruController extends Controller
 {
     public function myinbox(){
+        $order = Order::where('guruTernak_id', auth()->user()->id)->get();
+        $user = User::all();
         return view('guru/guru-myinbox-polosan', [
             'title' => 'My Inbox Order',
-            'order'=> "test"
+            'order'=> $order,
+            'user'=> $user
+            
         ]);
     }
 
@@ -89,13 +93,13 @@ class GuruController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    // public function update_status(Request $request, Order $order){
-    //     $order->update([
-    //         'status' => 'Verified'
-    //     ]);
-    //     $request->session()->flash('success', 'data berhasil diubah gan');
-    //     return redirect("/gurutani/inbox");
-    // }
+    public function update_status(Request $request, Order $order){
+        $order->update([
+            'status' => $request->status
+        ]);
+        $request->session()->flash('success', 'data berhasil diubah gan');
+        return redirect("/guruternak/inbox");
+    }
 
     // public function update_status2(Request $request, Order $order){
     //     $order->update([
@@ -120,13 +124,13 @@ class GuruController extends Controller
     //     return back()->with('loginError', 'Login gagal, gan!'); 
     // }
 
-    // public function logout(){
-    //     Auth::logout();
+    public function logout(){
+        Auth::logout();
 
-    //     request()->session()->invalidate();
-    //     request()->session()->regenerateToken();
-    //     // withOutCookie()
-    //     return redirect('/');
-    // }
+        request()->session()->invalidate();
+        request()->session()->regenerateToken();
+        // withOutCookie()
+        return redirect('/');
+    }
     // login guru
 }

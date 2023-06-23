@@ -10,34 +10,27 @@
 
             <div class="class-box dashboard-box">
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E; ">Kelas Saya</h1>
-                <p>Kelas yang tersedia</p>
+                <div class="titleVideo d-flex align-items-center">
+                    <p>Kelas yang tersedia</p>
+                    <img src="../../../asset/coin.png" alt="" class="ms-4">
+                </div>
                 <div class="class-subtle dashboard-subtle">
                     <img src="../asset/edit.svg" alt="">
                     Kelas Saya
                 </div>
 
                 <div class="class-container">
-                    
-                    
-                    <div class="class-card">
-                        <img src="asset('storage/thumbnails/products/'. $ord->cover)" alt="">
-                        <h1>$ord->title</h1>
-                        <p>$ord->created_at</p>
-                        <a href="/course-video" class="class-cta cta">Start Learn</a>
+                    @foreach ($order as $ord)
+                    @if($ord->status == "Verified")
+
+                    <div class="course__card">
+                        <img src="../asset/thumbnails/{{$ord->cover}}" alt="" class="course__img">
+                        <h1>{{$ord->title}}</h1>
+                        <p>{{$ord->created_at}}</p>
+                        <a href="/user/class/{{$ord->course_id}}" class="class-cta cta">Start Learn</a>
                     </div>
-                    <div class="class-card">
-                        <img src="asset('storage/thumbnails/products/'. $ord->cover)" alt="">
-                        <h1>$ord->title</h1>
-                        <p>$ord->created_at</p>
-                        <a href="/course-video" class="class-cta cta">Start Learn</a>
-                    </div>
-                    <div class="class-card">
-                        <img src="asset('storage/thumbnails/products/'. $ord->cover)" alt="">
-                        <h1>$ord->title</h1>
-                        <p>$ord->created_at</p>
-                        <a href="/course-video" class="class-cta cta">Start Learn</a>
-                    </div>
-                    
+                    @endif
+                    @endforeach
 
                 </div>
 

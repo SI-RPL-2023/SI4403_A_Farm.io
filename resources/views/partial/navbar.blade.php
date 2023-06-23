@@ -1,5 +1,5 @@
 <nav class="nav">
-    <img src="../asset/Logo.png" alt="Farmio" class="nav__logo w-75">
+    <img src="../../asset/Logo.png" alt="Farmio" class="nav__logo w-75">
     <div class="nav__box">
         <a href="/" class="nav__link">Home</a>
         <a href="/event" class="nav__link">Events</a>
@@ -7,8 +7,9 @@
         <a href="/course" class="nav__link">Courses</a>
 
         @auth
-        @if(auth()->check() && auth()->user()->role === "gurutani" )
-
+        <img src="../../asset/fotoAkun.png" alt="foto akun" style="margin-right: -20px;">
+        @if(auth()->check() && auth()->user()->role === "guru" )
+        
         <div class="dropdown" id="">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -55,7 +56,7 @@
         @endif
         @else
         <a href="/guruternak/login" class="nav__link nav-redirect">Login sebagai  Guru Ternak</a>
-        <a href="/login" class="nav__link nav-btn">Login</a>
+        <a href="/login" class="nav__link nav-btn" id="loginBTN">Login</a>
         @endauth
 
     </div>

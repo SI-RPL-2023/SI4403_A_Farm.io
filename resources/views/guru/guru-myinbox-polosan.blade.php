@@ -10,10 +10,41 @@
 
             <div class="order-box dashboard-box">
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E; ">Rincian Order</h1>
-                <p>Order Status</p>
+                <div class="tagBungkus d-flex align-items-center">
+                    <p>Order Status</p>
+                    <img src="../asset/book.png" class="ms-5" alt="">
+                </div>
+                <div class="report">
+                    <div class="reportData">
+                        <div class="headData">
+                            <img src="../asset/tasReport.png" alt="logo">
+                            <h2>Total Order</h2>
+                        </div>
+                        <h1>{{ $order->count() }}</h1>
+                    </div>
+                    <div class="reportData">
+                        <div class="headData">
+                            <img src="../asset/orangReport.png" alt="logo">
+                            <h2>Total User</h2>
+                        </div>
+                        <h1>{{ $user->count() }}</h1>
+                    </div>
+                    <div class="reportData">
+                        <div class="headData">
+                            <img src="../asset/ceklistReport.png" alt="logo">
+                            <h2>Total Pendapatan</h2>
+                        </div>
+                        @php $total=0 @endphp
+                        @foreach ($order as $ord)
+                        @php
+                        $ord->status === 'Verified' ? $total += $ord->price : $total +=0
+                        @endphp
+                        @endforeach
+                        <h1>{{$total}}</h1>
+                    </div>
+                </div>
                 <div class="class-subtle dashboard-subtle">
-                        <img src="../asset/edit.svg" alt="">
-                        Order Status
+                    Order Status
                 </div>
                 <div class="tableOrder">
                     <table class="order-table mx-auto">
@@ -30,34 +61,32 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($order as $ord)
                             <tr>
-                                <td>1</td>
+                                <td>{{$ord->id}}</td>
+                                <td><img src="../asset/thumbnails/{{$ord->cover}}" class="order-cover" alt=""></td>
+                                <td>{{$ord->title}}</td>
                                 <td>
-                                <a href="../asset/bukti-tf.jpg" target="_blank">
-                                    <img src="../asset/bukti-tf.jpg" alt="" class="inbox-img">
-                                </a>
+                                    <a href="" class="inbox-idclass">{{$ord->type}}</a>
                                 </td>
-                                <td>3</td>
+                                <td>{{$ord->price}}</td>
+                                <td>{{$ord->created_at}}</td>
+                                <td><span class="bg-warning text-white order-status">{{$ord->status}}</span></td>
                                 <td>
-                                    <a href="" class="inbox-idclass">a10</a>
-                                </td>
-                                <td>Rp123123</td>
-                                <td>tanggal</td>
-                                <td><span class="bg-warning text-white order-status">Status</span></td>
-                                <td class="order-action">
-                                    <form action="/gurutani/inbox/parameter" method="post">
+                                    <form action="/guruternak/inbox/{{$ord->id}}" method="post">
                                         @csrf
                                         @method('put')
-                                        <button class="inbox-invoice cta bg-succes" name="Verified" type="submit">Confirm</button>
+                                        <button class="inbox-invoice cta bg-succes" name="status" value="Verified" type="submit">Confirm</button>
                                     </form>
-                                    <form action="/gurutani/inbox/parameter" method="post">
+                                    <form action="/guruternak/inbox/{{$ord->id}}" class="mt-3" method="post">
                                         @csrf
                                         @method('put')
-                                        <button class="inbox-invoice cta bg-danger" name="Rejected" type="submit">Rejected</button>
+                                        <button class="inbox-invoice cta bg-danger" name="status" value="Rejected" type="submit">Rejected</button>
                                     </form>
                                 </td>
                             </tr>
-    
+                            @endforeach
+
                             <!-- <tr>
                                 <td>2</td>
                                 <td><a href="" class="inbox-idclass">b20</a></td>

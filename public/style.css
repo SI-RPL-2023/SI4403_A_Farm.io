@@ -69,7 +69,7 @@ body {
 
 .dashboard-box p {
     font-size: 2rem;
-    color: #848484;
+    color: black;
 }
 
 .dashboard-subtle {
@@ -531,23 +531,21 @@ body {
 }
 
 .course__card {
-    width: 382px;
-    height: 559px;
     display: grid;
-    margin: auto;
-    grid-template-columns: 1fr;
-    grid-auto-rows: min-content;
-    grid-gap: 0.5rem;
-    padding: 2rem 3rem;
+    margin: 20px;
+    padding: 1rem 1rem;
     border-radius: 8px;
     background-color: white;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
 }
 
 .course__img {
-    width: 100%;
-    height: 100%;
+    width: 380px;
+    height: 219px;
     object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    margin: auto;
 }
 
 .course__card h1 {
@@ -558,10 +556,10 @@ body {
 }
 
 .course__card p {
-    font-size: 1.5rem;
-    padding-bottom: 9px;
+    font-size: 16px;
+    padding-bottom: 10px;
     font-weight: 400;
-    color: #989b9e;
+    color: #5d5f60;
 }
 
 .course__detail {
@@ -569,6 +567,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .course__detail span {
@@ -607,6 +606,7 @@ body {
     font-size: 1.6rem;
     font-weight: 500;
     color: #989b9e;
+    margin-top: 10px;
 }
 
 .course__harga-asli {

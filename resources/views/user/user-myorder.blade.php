@@ -10,9 +10,12 @@
 
             <div class="order-box dashboard-box">
                 <h1 style="text-decoration: underline;text-decoration-color: #C5D22E; ">Rincian Order</h1>
-                <p>Order Status</p>
+                
+                <div class="titleVideo d-flex align-items-center">
+                    <p>Order Status</p>
+                    <img src="../../../asset/coin.png" alt="" class="ms-4">
+                </div>
                 <div class="class-subtle dashboard-subtle">
-                    <img src="../asset/edit.svg" alt="">
                     Order Status
                 </div>
                 <div class="tableOrder">
@@ -30,22 +33,21 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- foreach $order as $ord -->
+                            @foreach ($order as $ord)
                             <tr>
-                                <td>1</td>
-                                <td><img src="asset('storage/thumbnails/products/'. $ord->cover)" class="order-cover"
+                                <td>{{$ord->id}}</td>
+                                <td><img src="../asset/thumbnails/{{$ord->cover}}" class="order-cover"
                                         alt=""></td>
-                                <td class="order-name">$ord->title</td>
-                                <td>$ord->type</td>
-                                <td>$ord->price</td>
-                                <td>$ord->created_at</td>
-                                <td><span class="bg-warning text-white order-status">$ord->status</span></td>
-                                <td class="order-action">
-                                    
-                                    <a href="" class="order-action-cta order-action-cta-secondary cta">Detail class</a>
+                                <td class="order-name">{{$ord->title}}</td>
+                                <td>{{$ord->type}}</td>
+                                <td>{{$ord->price}}</td>
+                                <td>{{$ord->created_at}}</td>
+                                <td><span class="bg-warning text-white order-status">{{$ord->status}}</span></td>
+                                <td>                                    
+                                    <a href="/user/class" class="order-action-cta order-action-cta-secondary cta">Detail class</a>
                                 </td>
                             </tr>
-                            <!-- endforeach -->
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

@@ -17,9 +17,9 @@ class GuruSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         User::create([
-            'name' => 'darto',
-            'email' => 'darto@gmail.com',
-            'username' => 'darto123',
+            'name' => 'ahmad',
+            'email' => 'ahmad@gmail.com',
+            'username' => 'ahmad123',
             'password' => bcrypt('123123123'),
             'role' => 'guru',
             'created_at' => date('Y-m-d H:i:s'),
@@ -35,9 +35,9 @@ class GuruSeeder extends Seeder
             'updated_at' => date('Y-m-d H:i:s')
         ]);
         Guru::create([
-            'name' => 'darto',
-            'email' => 'darto@gmail.com',
-            'username' => 'darto123',
+            'name' => 'Dani',
+            'email' => 'Dani@gmail.com',
+            'username' => 'Dani123',
             'password' => bcrypt('123123123'),
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')

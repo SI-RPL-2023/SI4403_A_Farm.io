@@ -23,6 +23,9 @@
         margin-right: 4%;
         font-style: bold;
     }
+    #hide{
+        display: none !important;
+    }
     .fitur{
         padding-top: 5%;
     }
@@ -66,27 +69,27 @@
                             belajar tentang berbagai aspek peternakan seperti <br>
                             manajemen peternakan, nutrisi hewan, kesehatan <br>
                             hewan, dan lain sebagainya.!</p>
-                        <button type="button" class="btn btn-warning"
-                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px;">
+                        <a id="{{ auth()->check() ? 'hide' : ''}}" type="button" class="btn btn-warning" href="/register"
+                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px; margin-top:10px;margin-right:15px">
                             <b>Join For Free</b>
-                        </button>
-                        <button type="button" class="btn btn-outline-light"
-                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px;">
+                        </a>
+                        <a type="button" class="btn btn-outline-light" href="/event"
+                            style="--bs-btn-padding-y: 10px; --bs-btn-padding-x: 20px; --bs-btn-font-size: 16px;margin-top:10px">
                             <b>View All Event</b>
-                        </button>
+                        </a>
                     </div>
                     </div>
                 </div>
                 <div>
                 <img class="position-absolute bottom-0 end-0" style=" width: 400px" src="../../../asset/titik1.png" alt="">
                 <img class="position-absolute top-0 start-50 translate-middleç-x" style=" width: 400px" src="../../../asset/titik.svg" alt="">
-                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
+                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 100px" src="../../../asset/Frame 1063.png" alt="">
                 </div>
                 <div class="col-6">
                     <div class="row">
                         <img class="position-absolute top-0 start-50 translate-middleç-x" style=" width: 400px" src="../asset/titik.svg" alt="">
                         <div class="col rounded-5 p-5 border w-100 bg-light bg-opacity-25" style='backdrop-filter: blur(10px);'>
-                            <iframe class="w-100" height="439" src="https://www.youtube.com/embed/nbXjnumdKwg" 
+                            <iframe class="w-100 " style="border-radius: 10px;;"height="439" src="https://www.youtube.com/embed/nbXjnumdKwg" 
                             title="YouTube video player" frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                             allowfullscreen style="background-color: #fff"></iframe>

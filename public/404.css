@@ -1,0 +1,33 @@
+.container_404{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_404 img{
+    width: 600px;
+    margin: 30px 0px;
+}
+
+.container_404 h1 {
+    width: 620px;
+    color: rgba(68, 68, 68, 1);
+    font-weight: 600;
+    font-size: 31px;
+    margin-bottom: 15px;
+}
+
+.container_404 p {
+    width: 610px;
+    color: rgba(132, 132, 132, 1);
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.container_404 .cta {
+    margin: 30px 0px;
+    width: 452px;
+}

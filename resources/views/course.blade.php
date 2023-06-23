@@ -14,7 +14,7 @@
             </div>
             <div class="course-right">
                 <img class="position-absolute bottom-0 end-0" style=" width: 400px" src="../../../asset/titik1.png" alt="">
-                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px" src="../../../asset/Frame 1063.png" alt="">
+                <img class="position-absolute top-100 ml-5 start-0 translate-middle-y" style=" width: 700px; z-index:-1;" src="../../../asset/Frame 1063.png" alt="">
                 <div class="col">
                     <div>
                         <img src="asset/embe.png" alt="">
@@ -44,37 +44,41 @@
                     </div>
                 </div>
                 <div class="course__search">
-                    <form action="" method="" class="course-input-box mb-5">
-                    <img src="asset/search.png" alt="">
-                    <input type="text" class="course-input" name="search" value="" autocomplete="off"
-                        placeholder="Search course">
+                    <form action="/courses" method="" class="course-input-box mb-5">
+                        <img src="asset/search.png" alt="">
+                        <input type="text" class="course-input" name="search" value="{{ request('search') }}" autocomplete="off"
+                            placeholder="Search course">
                     </form>
                     <div class="course-content">
-                        <div class="course__card">
-                            <img src="asset/testing1.png" alt="" class="course__img">
-                            <h1>Pentingnya Penggunaan Teknolgi peternakan</h1>
-                            <p>Menambahan wawasan mengenai pentingnya menggunakan teknologi pada peternakan</p>
-                            <div class="course__detail">
-                                <span>
-                                    <img src="asset/book.svg" alt="">
-                                    13 Materi
-                                </span>
-                                <span>
-                                    <img src="asset/bookmark.svg" alt="">
-                                    Fundamental
-                                </span>
-                            </div>
-                            <div class="course__gutter"></div>
-                            <div class="course__card-transaksi d-flex justify-content-between">
-                                <div class="course__harga">
-                                    <p class="course__harga-coret">Rp125.000</p>
-                                    <h2 class="course__harga-asli">GRATIS</h2>
+                        @foreach ($course as $crs)
+                            <div class="course__card">
+                                <img src="../asset/thumbnails/{{$crs->thumbnail}}" alt="image" class="course__img">
+                                <h1>{{ Str::limit($crs->title, 25) }}</h1>
+                                <p>{{ Str::limit($crs->description, 30) }}</p>
+                                <div class="course__detail">
+                                    <span>
+                                        <img src="../../asset/book.svg" alt="">
+                                        13 Materi
+                                    </span>
+                                    <span>
+                                        <img src="asset/bookmark.svg" alt="">
+                                        Fundamental
+                                    </span>
                                 </div>
-                                <div class="course__cardButton">
-                                    <a href="" class="course__card-cta cta"><b>Beli Kelas</b></a>
+                                <div class="course__gutter"></div>
+                                <div class="course__card-transaksi d-flex justify-content-between">
+                                    <div class="course__harga">
+                                        {{$discount= $crs->price*120/100}}
+                                        <p class="course__harga-coret">Rp{{ $discount }}</p>
+                                        <h2 class="course__harga-asli">Rp{{ $crs->price }}</h2>
+                                    </div>
+                                    <div class="course__cardButton">
+                                        <a href="/checkout/{{ $crs->id }}" class="course__card-cta cta me-2"><b>Beli Kelas</b></a>
+                                        <a href="/course/{{ $crs->id }}" class="course__card-cta  course__card-cta-secondary cta">Detail Class</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
