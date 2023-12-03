@@ -69,7 +69,7 @@ class TransactionTest extends DuskTestCase
                     ->clickLink('My Course')
                     ->assertPathIs('/user/class')
                     ->clickLink('Start Learn')
-                    -pause(5000);
+                    ->pause(5000);
         });
     }
 }
